@@ -28,13 +28,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<VStack
-				flex={1}
-				alignItems={'stretch'}
-				as={'main'}
-				spacing={4}
-				pb={{ base: 2, sm: 4, md: 6, lg: 8 }}
-			>
+			<VStack flex={1} alignItems={'stretch'} as={'main'} spacing={4} py={4} pb={'5vh'}>
 				<LndImg />
 			</VStack>
 		</>
