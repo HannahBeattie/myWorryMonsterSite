@@ -1,22 +1,8 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import {
-	VStack,
-	Text,
-	Heading,
-	HStack,
-	SimpleGrid,
-	Grid,
-	GridItem,
-	ButtonGroup,
-	Button,
-	Stack,
-} from '@chakra-ui/react'
-import MonsterImage from '../../public/components/MonsterImage'
-import LndImg from '../../public/components/LndImg'
-import BgImage from '../../public/components/BgImage'
+import { VStack } from '@chakra-ui/react'
 
-const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head'
+import LndImg from '../../public/components/LndImg'
+import SmoothScroll from '../../public/components/SmoothScroll'
 
 export default function Home() {
 	return (
@@ -29,7 +15,8 @@ export default function Home() {
 			</Head>
 
 			<VStack flex={1} alignItems={'stretch'} as={'main'} spacing={4} py={4} pb={'5vh'}>
-				<LndImg />
+				{/* <LndImg /> */}
+				<SmoothScroll />
 			</VStack>
 		</>
 	)
