@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 import Buttons from './landing/Buttons'
+import Title from './landing/Title'
 import MonsterImage from './MonsterImage'
 import Subtitle from './Subtitle'
 
@@ -23,24 +24,17 @@ function LndImg() {
 				Grid
 				templateColumns={{ lg: 'repeat(5, 1fr)' }}
 				pr={{ lg: '12vw' }}
-				pl={{ lg: '8vw' }}
+				pl={{ md: '4vh', lg: '8vw' }}
 				pt={{ lg: 10 }}
 			>
 				<GridItem
 					colSpan={{ base: 1, lg: 3 }}
-					px={{ base: 6 }}
+					px={{ base: '10vw' }}
 					pt={{ base: 2 }}
 					p={{ md: 8, lg: 10 }}
 				>
-					<VStack flex={1} alignItems={{ base: 'center', md: 'stretch' }}>
-						<Heading
-							pt={{ sm: 4, lg: 0 }}
-							maxW={{ base: 300, sm: 500, lg: '800' }}
-							fontSize={{ base: '6xl', sm: '5xl', lg: '8xl', xl: '9xl' }}
-							lineHeight={1}
-						>
-							My Worry Monster
-						</Heading>
+					<VStack flex={1} alignItems={{ base: 'stretch', md: 'stretch' }}>
+						<Title />
 						<VStack alignItems={'stretch'}>
 							<Subtitle />
 							<VStack

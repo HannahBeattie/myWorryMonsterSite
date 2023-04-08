@@ -4,7 +4,7 @@ import React from 'react'
 const btnProps = {
 	backgroundColor: 'whiteAlpha.50',
 	boxShadow: 'lg',
-	fontSize: { lg: '2xl' },
+	fontSize: { base: 'xl', lg: '2xl' },
 	color: 'gray.100',
 	_hover: { color: 'purple.200' },
 	p: 6,
