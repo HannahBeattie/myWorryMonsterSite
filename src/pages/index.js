@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import MonsterImage from '../../public/components/MonsterImage'
 import LndImg from '../../public/components/LndImg'
+import BgImage from '../../public/components/BgImage'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,14 +27,15 @@ export default function Home() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<VStack flex={1} alignItems={'stretch'} as={'main'} spacing={4}>
+
+			<VStack
+				flex={1}
+				alignItems={'stretch'}
+				as={'main'}
+				spacing={4}
+				pb={{ base: 2, sm: 4, md: 6, lg: 8 }}
+			>
 				<LndImg />
-				<VStack>
-					<SimpleGrid columns={{ base: 2 }} columnGap={2}>
-						<Button backgroundColor={'whiteAlpha.200'}>IOS</Button>
-						<Button backgroundColor={'whiteAlpha.200'}>Android</Button>
-					</SimpleGrid>
-				</VStack>
 			</VStack>
 		</>
 	)

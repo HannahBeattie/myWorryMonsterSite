@@ -16,8 +16,9 @@ function MonsterImage({ mood, alt }) {
 		<VStack>
 			<Image
 				flex={1}
-				maxH={{ base: '60vh', md: '80vh', lg: '90vh', xl: '95vh' }}
-				mt={{ base: 0, sm: 0, lg: 200, xl: 300 }}
+				maxH={{ base: '60vh', md: '70vh', lg: '90vh', xl: '95vh' }}
+				mt={{ base: 0, sm: 0, md: -10, lg: 200, xl: 300 }}
+				mr={{ lg: 12 }}
 				src={checkMood()}
 				alt={
 					alt
