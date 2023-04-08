@@ -11,10 +11,13 @@ import {
 	ButtonGroup,
 	Button,
 	Stack,
+	Container,
+	Image,
 } from '@chakra-ui/react'
 import MonsterImage from '../../public/components/MonsterImage'
 import LndImg from '../../public/components/LndImg'
 import BgImage from '../../public/components/BgImage'
+import Display from '../../public/components/landing/Display'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +33,74 @@ export default function Home() {
 
 			<VStack flex={1} alignItems={'stretch'} as={'main'} spacing={4} py={4} pb={'5vh'}>
 				<LndImg />
+				<Display
+					bg={'transparent'}
+					image={
+						<MonsterImage
+							mood={'ph2'}
+							props={{
+								mt: 0,
+								maxH: 600,
+								borderRadius: 20,
+								shadow: false,
+								className: 'shadow',
+							}}
+						/>
+					}
+				>
+					<Container>
+						<VStack space={2} fontSize={'2xl'}>
+							<Heading>What is a worry monster?</Heading>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+						</VStack>
+					</Container>
+				</Display>
+				<Display
+					right={true}
+					bg={'transparent'}
+					image={
+						<MonsterImage
+							mood={'ph'}
+							props={{
+								mt: 0,
+								maxH: 600,
+								borderRadius: 20,
+								shadow: false,
+								className: 'shadow',
+							}}
+						/>
+					}
+				>
+					<Container>
+						<VStack space={2} fontSize={'2xl'}>
+							<Heading>Why worry?</Heading>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+						</VStack>
+					</Container>
+				</Display>
+				<Display
+					bg={'transparent'}
+					image={<Image alt={'spatter'} src={'/assets/bg/spat.png'} />}
+				>
+					<Container>
+						<VStack space={2} fontSize={'2xl'}>
+							<Heading>About the creator</Heading>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+							<Text>A worry monster is a creature that enjoyes eating worries.</Text>
+						</VStack>
+					</Container>
+				</Display>
 			</VStack>
 		</>
 	)
