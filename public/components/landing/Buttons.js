@@ -14,7 +14,7 @@ const btnProps = {
 	h: btnScale,
 }
 const fontSize = {
-	fontSize: { md: '3xl' },
+	fontSize: { sm: 'md', md: 'md', lg: 'xl' },
 }
 const btnFnt = {
 	fontSize: { md: '3xl' },
