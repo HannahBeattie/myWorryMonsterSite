@@ -44,13 +44,33 @@ const SmoothScroll = () => {
 				}}
 			>
 				<HStack position={'relative'} width={'max-content'} alignItems={'center'}>
-					<VStack flex={1} position={'relative'} display={'flex'}>
+					<VStack
+						flex={1}
+						position={'relative'}
+						display={'flex'}
+						maxH={'100vh'}
+						maxW={'100vw'}
+					>
 						<LndImg />
 					</VStack>
-					<VStack flex={1} position={'relative'} display={'flex'}>
+					<VStack
+						flex={1}
+						position={'relative'}
+						display={'flex'}
+						maxH={'100vh'}
+						maxW={'100vw'}
+					>
 						<LndImg />
 					</VStack>
-					<LndImg />
+					<VStack
+						flex={1}
+						position={'relative'}
+						display={'flex'}
+						maxH={'100vh'}
+						maxW={'100vw'}
+					>
+						<LndImg />
+					</VStack>
 				</HStack>
 			</motion.section>
 			<VStack ref={ghostRef} style={{ height: scrollRange }} className='ghost' />
