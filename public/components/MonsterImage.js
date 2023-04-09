@@ -1,18 +1,30 @@
 import { Image, VStack } from '@chakra-ui/react'
 import React from 'react'
 
-function MonsterImage({ mood, alt, props, shadow, glow }) {
+function MonsterImage({ im, alt, props, shadow }) {
 	const checkMood = () => {
-		if (mood === 'curious') {
-			return '/blue/curious.png'
-		} else if (mood === 'happy') {
-			return '/blue/happy.png'
-		} else if (mood === 'ph') {
-			return '/blue/ph.png'
-		} else if (mood === 'ph2') {
-			return '/blue/ph2.jpg'
+		if (im === 1) {
+			return '/blue/1.jpg'
+		} else if (im === 2) {
+			return '/blue/3.jpg'
+		} else if (im === 3) {
+			return '/blue/3.jpg'
+		} else if (im === 4) {
+			return '/blue/4.jpg'
+		} else if (im === 5) {
+			return '/blue/5.jpg'
+		} else if (im === 6) {
+			return '/blue/6.jpg'
+		} else if (im === 7) {
+			return '/blue/7.png'
+		} else if (im === 8) {
+			return '/blue/8.png'
+		} else if (im === 9) {
+			return '/blue/9.png'
+		} else if (im === 10) {
+			return '/blue/10.jpg'
 		} else {
-			return '/blue/happy.png'
+			return '/blue/1.jpg'
 		}
 	}
 

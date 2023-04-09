@@ -49,7 +49,7 @@ function LndImg() {
 				</GridItem>
 
 				<GridItem colSpan={{ lg: 2 }}>
-					<MonsterImage mood={'wWorries'} />
+					<MonsterImage im={8} />
 				</GridItem>
 			</Grid>
 			<VStack display={{ base: 'flex', md: 'none' }}>

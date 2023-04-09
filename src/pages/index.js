@@ -26,13 +26,11 @@ export default function Home() {
 					bg={'transparent'}
 					image={
 						<MonsterImage
-							mood={'ph'}
+							im={7}
 							props={{
 								mt: 0,
 								maxH: 600,
 								borderRadius: 20,
-								shadow: false,
-								className: 'shadow',
 							}}
 						/>
 					}
@@ -45,7 +43,7 @@ export default function Home() {
 					bg={'transparent'}
 					image={
 						<MonsterImage
-							mood={'ph2'}
+							im={3}
 							props={{
 								borderRadius: 20,
 								shadow: false,
@@ -60,11 +58,12 @@ export default function Home() {
 					bg={'transparent'}
 					image={
 						<MonsterImage
-							mood={'curious'}
+							im={10}
 							props={{
 								mt: 0,
 								maxH: 600,
 								borderRadius: 20,
+								shadow: true,
 							}}
 						/>
 					}
@@ -72,10 +71,11 @@ export default function Home() {
 					{sec3}
 				</Feature>
 				<Feature
+					right={true}
 					bg={'transparent'}
 					image={
 						<MonsterImage
-							mood={'ph'}
+							im={1}
 							props={{
 								mt: 0,
 								maxH: 600,
