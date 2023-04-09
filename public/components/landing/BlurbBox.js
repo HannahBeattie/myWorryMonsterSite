@@ -5,7 +5,7 @@ function BlurbBox({ heading, children }) {
 	return (
 		<Container>
 			<Heading>{heading}</Heading>
-			<VStack alignItems={'stretch'} fontSize={'2xl'} spacing={8}>
+			<VStack alignItems={'stretch'} fontSize={{ base: 'lg', lg: '2xl' }} spacing={8}>
 				{children}
 			</VStack>
 		</Container>
