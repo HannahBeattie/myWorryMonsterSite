@@ -1,9 +1,10 @@
 import { IconButton, Image, VStack, Text, Icon, Center } from '@chakra-ui/react'
 import React from 'react'
 import StyledNextLink from './StyledNextLink'
+import { useRouter } from 'next/router'
 
 export default function CustomIcon({ icon, href, page, idx, btscl }) {
-	const scale = btscl ? btscl : 8
+	const scale = btscl ? btscl : 6
 
 	const checkIcon = () => {
 		if (icon === 'home') {
@@ -16,15 +17,19 @@ export default function CustomIcon({ icon, href, page, idx, btscl }) {
 			return
 		}
 	}
-	console.log({ icon })
+	const router = useRouter()
+	const currentRoute = router.pathname
 
 	return (
 		<StyledNextLink href={href}>
-			<VStack>
+			<VStack
+				_hover={{ backgroundColor: 'transparent', opacity: 100 }}
+				opacity={href === currentRoute ? '100%' : '50%'}
+			>
 				<IconButton
 					backgroundColor={'transparent'}
+					_hover={{ backgroundColor: 'transparent' }}
 					borderRadius={200}
-					_hover={{ backgroundColor: 'gray.900' }}
 					idx={idx}
 					icon={
 						<Image
@@ -36,7 +41,7 @@ export default function CustomIcon({ icon, href, page, idx, btscl }) {
 						/>
 					}
 				/>
-				<Text fontSize={'2xl'}>{page}</Text>
+				<Text fontSize={'xl'}>{page}</Text>
 			</VStack>
 		</StyledNextLink>
 	)

@@ -47,22 +47,6 @@ export default function Home() {
 				</Feature>
 
 				<Feature
-					right={true}
-					bg={'transparent'}
-					image={
-						<MonsterImage
-							im={3}
-							props={{
-								borderRadius: 20,
-								shadow: false,
-								className: 'shadow',
-							}}
-						/>
-					}
-				>
-					{sec2}
-				</Feature>
-				<Feature
 					bg={'transparent'}
 					image={
 						<MonsterImage

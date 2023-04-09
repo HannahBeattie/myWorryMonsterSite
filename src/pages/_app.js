@@ -16,10 +16,18 @@ export default function App({ Component, pageProps }) {
 			</Head>
 			<BgImage bg={4} />
 			<AnimatePresence mode='wait' initial={false}>
-				<VStack as='main' spacing='0' flex={'1'} alignItems='stretch' minH='100vh'>
-					<Header />
+				<VStack
+					padding={0}
+					as='main'
+					spacing='0'
+					flex={'1'}
+					alignItems='stretch'
+					minH='100vh'
+					width={'100vw'}
+				>
 					<Logo />
 					<Component {...pageProps} />
+					<Header />
 				</VStack>
 			</AnimatePresence>
 		</ChakraProvider>

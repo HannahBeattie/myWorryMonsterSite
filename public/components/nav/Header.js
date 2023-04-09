@@ -4,8 +4,8 @@ import CustomIcon from './CustomIcon'
 import Logo from './Logo'
 
 const items = [
-	{ page: 'About', icon: 'info', href: '/about' },
-	{ page: 'Report a but', icon: 'bug', href: '/bugZone' },
+	{ page: 'about', icon: 'info', href: '/about' },
+	{ page: 'report bug', icon: 'bug', href: '/bugZone' },
 ]
 
 export default function Header() {
@@ -13,23 +13,32 @@ export default function Header() {
 	const currentRoute = router.pathname
 
 	return (
-		<HStack
-			maxW={'97vw'}
-			justify={'end'}
-			fontSize={'3xl'}
-			flex={1}
+		<VStack
+			fontSize={'sm'}
 			alignItems={'stretch'}
-			spacing={10}
-			py={8}
+			position={'fixed'}
+			bottom={0}
+			spacing={4}
+			right={0}
+			p={2}
+			backgroundColor={'blackAlpha.100'}
 		>
 			{items.map(({ href, page, icon }, idx) => (
 				<>
 					<VStack>
 						<CustomIcon icon={icon} href={href} key={idx} page={page} />
-						{href === currentRoute ? <Divider opacity={'100'} borderWidth={2} /> : null}
+						{/* {href === currentRoute ? (
+							<Box
+								borderWidth={2}
+								borderColor={'white'}
+								borderStyle={'ridge'}
+								h={0.4}
+								w={'100%'}
+							/>
+						) : null} */}
 					</VStack>
 				</>
 			))}
-		</HStack>
+		</VStack>
 	)
 }
