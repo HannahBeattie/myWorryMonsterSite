@@ -1,9 +1,10 @@
-import { Container, VStack } from '@chakra-ui/react'
+import { Container, Heading, VStack } from '@chakra-ui/react'
 import React from 'react'
 
-function BlurbBox() {
+function BlurbBox({ heading, children }) {
 	return (
 		<Container>
+			<Heading>{heading}</Heading>
 			<VStack alignItems={'stretch'} fontSize={'2xl'} spacing={8}>
 				{children}
 			</VStack>
