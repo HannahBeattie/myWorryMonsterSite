@@ -1,7 +1,7 @@
 import { VStack } from '@chakra-ui/react'
 import Head from 'next/head'
-import LndImg from '../../public/components/LndImg'
-import MonsterImage from '../../public/components/MonsterImage'
+import LndImg from '../../public/components/landing/LndImg'
+import MonsterImage from '../../public/components/landing/MonsterImage'
 import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
 

@@ -14,7 +14,7 @@ const btnProps = {
 	h: btnScale,
 }
 const fontSize = {
-	fontSize: { sm: 'md', md: 'md', lg: 'xl' },
+	// fontSize: { base: 'md', md: 'md', lg: 'xl' },
 }
 const btnFnt = {
 	fontSize: { md: '3xl' },
@@ -32,9 +32,7 @@ function Buttons() {
 				</VStack>
 				<VStack _hover={{ color: '#9EDEC6' }}>
 					<IconButton {...btnProps} icon={<FaAndroid fontSize={35} />} />
-					<Text {...btnFnt} s>
-						Android
-					</Text>
+					<Text {...btnFnt}>Android</Text>
 				</VStack>
 			</HStack>
 			<VStack spacing={0} alignItems={'stretch'}>

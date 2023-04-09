@@ -1,6 +1,6 @@
 import { List, Text } from '@chakra-ui/react'
 import BlurbBox from '../landing/BlurbBox'
-import IconListItem from '../IconListItem'
+import IconListItem from '../landing/IconListItem'
 
 export const one = {
 	item: (

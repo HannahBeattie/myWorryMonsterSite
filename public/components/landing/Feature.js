@@ -4,7 +4,7 @@ import React from 'react'
 export default function Feature({ image, children, right, bg }) {
 	return (
 		<>
-			<Grid Grid templateColumns={{ lg: 'repeat(5, 1fr)' }} pl={{ md: '4vh', lg: '8vw' }}>
+			<Grid templateColumns={{ lg: 'repeat(5, 1fr)' }} pl={{ md: '4vh', lg: '8vw' }}>
 				{!right && <GridItem colSpan={{ lg: 2 }}>{image}</GridItem>}
 				{right && (
 					<GridItem display={{ base: 'auto', lg: 'none' }} colSpan={{ lg: 2 }}>

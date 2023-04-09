@@ -12,8 +12,8 @@ import {
 	VStack,
 } from '@chakra-ui/react'
 import React from 'react'
-import Buttons from './landing/Buttons'
-import Title from './landing/Title'
+import Buttons from './Buttons'
+import Title from './Title'
 import MonsterImage from './MonsterImage'
 import Subtitle from './Subtitle'
 
@@ -21,7 +21,6 @@ function LndImg() {
 	return (
 		<>
 			<Grid
-				Grid
 				templateColumns={{ lg: 'repeat(5, 1fr)' }}
 				pr={{ lg: '12vw' }}
 				pl={{ md: '4vh', lg: '8vw' }}
