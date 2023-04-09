@@ -19,24 +19,26 @@ function Logo() {
 				opacity={isCurrent ? '100%' : '90%'}
 			>
 				<motion.div whileTap={{ rotate: 10 }}>
-					<IconButton
-						_hover={{ bg: 'transparent' }}
-						bg={'transparent'}
-						icon={
-							<Image
-								_hover={{ bg: 'whiteAlpha.200' }}
-								borderRadius={'20'}
-								h={scale}
-								w={scale}
-								alt={'monster logo'}
-								src={'/icons/favicon.png'}
-								backgroundColor={isCurrent ? 'whiteAlpha.100' : 'gray.900'}
-							/>
-						}
-					></IconButton>
+					<HStack>
+						<IconButton
+							_hover={{ bg: 'transparent' }}
+							bg={'transparent'}
+							icon={
+								<Image
+									_hover={{ bg: 'whiteAlpha.200' }}
+									borderRadius={'20'}
+									h={scale}
+									w={scale}
+									alt={'monster logo'}
+									src={'/icons/favicon.png'}
+									backgroundColor={isCurrent ? 'whiteAlpha.100' : 'gray.900'}
+								/>
+							}
+						></IconButton>
+					</HStack>
 					{isCurrent && (
 						<VStack pt={2}>
-							<Text opacity={'70%'} fontSize={'2xl'}>
+							<Text opacity={'70%'} fontSize={'xl'} maxW={20}>
 								W.M
 							</Text>
 						</VStack>
@@ -44,13 +46,9 @@ function Logo() {
 
 					{!isCurrent && (
 						<VStack pt={2}>
-							<Image
-								borderRadius={'20'}
-								h={8}
-								w={8}
-								alt={'back'}
-								src={'assets/navcons/bk.png'}
-							/>
+							<Text opacity={'70%'} fontSize={'2xl'} fontWeight={900}>
+								back
+							</Text>
 						</VStack>
 					)}
 				</motion.div>

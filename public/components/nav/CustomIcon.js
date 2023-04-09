@@ -3,7 +3,7 @@ import React from 'react'
 import StyledNextLink from './StyledNextLink'
 import { useRouter } from 'next/router'
 
-export default function CustomIcon({ icon, href, page, idx, btscl }) {
+export default function CustomIcon({ icon, href, page, btscl }) {
 	const scale = btscl ? btscl : 6
 
 	const checkIcon = () => {
@@ -30,7 +30,6 @@ export default function CustomIcon({ icon, href, page, idx, btscl }) {
 					backgroundColor={'transparent'}
 					_hover={{ backgroundColor: 'transparent' }}
 					borderRadius={200}
-					idx={idx}
 					icon={
 						<Image
 							backgroundColor={'transparent'}

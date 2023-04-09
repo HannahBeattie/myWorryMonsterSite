@@ -24,10 +24,9 @@ export default function Header() {
 			backgroundColor={'blackAlpha.100'}
 		>
 			{items.map(({ href, page, icon }, idx) => (
-				<>
-					<VStack>
-						<CustomIcon icon={icon} href={href} key={idx} page={page} />
-						{/* {href === currentRoute ? (
+				<VStack key={`item-key${idx}`}>
+					<CustomIcon icon={icon} href={href} page={page} />
+					{/* {href === currentRoute ? (
 							<Box
 								borderWidth={2}
 								borderColor={'white'}
@@ -36,8 +35,7 @@ export default function Header() {
 								w={'100%'}
 							/>
 						) : null} */}
-					</VStack>
-				</>
+				</VStack>
 			))}
 		</VStack>
 	)

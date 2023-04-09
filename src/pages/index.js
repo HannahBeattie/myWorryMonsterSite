@@ -8,7 +8,7 @@ import Logo from '../../public/components/nav/Logo'
 
 export default function Home() {
 	const sec1 = getItem('one')
-	const sec2 = getItem('two')
+
 	const sec3 = getItem('three')
 	const sec4 = getItem('four')
 	return (
