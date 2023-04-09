@@ -20,7 +20,6 @@ export default function StyledNextLink({ href, children, ...props }) {
 					{...props}
 				>
 					{children}
-					{href === currentRoute ? <Divider opacity={'100'} borderWidth={2} /> : null}
 				</Link>
 			</NextLink>
 		</VStack>

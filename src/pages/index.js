@@ -4,6 +4,7 @@ import LndImg from '../../public/components/landing/LndImg'
 import MonsterImage from '../../public/components/landing/MonsterImage'
 import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
+import Logo from '../../public/components/nav/Logo'
 
 export default function Home() {
 	const sec1 = getItem('one')
@@ -19,9 +20,16 @@ export default function Home() {
 				<link rel='icon' href='/icons/favicon.png' />
 			</Head>
 
-			<VStack flex={1} alignItems={'stretch'} as={'main'} spacing={4} py={4} pb={'5vh'}>
+			<VStack
+				flex={1}
+				alignItems={'stretch'}
+				as={'main'}
+				spacing={4}
+				py={4}
+				maxW={'100vw'}
+				overflow={'hidden'}
+			>
 				<LndImg />
-
 				<Feature
 					bg={'transparent'}
 					image={

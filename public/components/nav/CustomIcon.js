@@ -1,8 +1,10 @@
-import { IconButton, Image, VStack, Text } from '@chakra-ui/react'
+import { IconButton, Image, VStack, Text, Icon, Center } from '@chakra-ui/react'
 import React from 'react'
 import StyledNextLink from './StyledNextLink'
 
-export default function CustomIcon({ icon, href, page, idx }) {
+export default function CustomIcon({ icon, href, page, idx, btscl }) {
+	const scale = btscl ? btscl : 8
+
 	const checkIcon = () => {
 		if (icon === 'home') {
 			return '/assets/navcons/home.png'
@@ -18,8 +20,24 @@ export default function CustomIcon({ icon, href, page, idx }) {
 
 	return (
 		<StyledNextLink href={href}>
-			<IconButton idx={idx} icon={<Image alt={icon} src={icon} />} />
-			<Text>{page}</Text>
+			<VStack>
+				<IconButton
+					backgroundColor={'transparent'}
+					borderRadius={200}
+					_hover={{ backgroundColor: 'gray.900' }}
+					idx={idx}
+					icon={
+						<Image
+							backgroundColor={'transparent'}
+							h={scale}
+							w={scale}
+							alt={icon}
+							src={checkIcon()}
+						/>
+					}
+				/>
+				<Text fontSize={'2xl'}>{page}</Text>
+			</VStack>
 		</StyledNextLink>
 	)
 }

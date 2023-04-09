@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import BgImage from '../../public/components/landing/BgImage'
 import Header from '../../public/components/nav/Header'
+import Logo from '../../public/components/nav/Logo'
 export default function App({ Component, pageProps }) {
 	return (
 		<ChakraProvider theme={theme}>
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
 			<AnimatePresence mode='wait' initial={false}>
 				<VStack as='main' spacing='0' flex={'1'} alignItems='stretch' minH='100vh'>
 					<Header />
+					<Logo />
 					<Component {...pageProps} />
 				</VStack>
 			</AnimatePresence>
