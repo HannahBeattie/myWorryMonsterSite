@@ -13,6 +13,10 @@ export default function CustomIcon({ icon, href, page, btscl }) {
 			return '/assets/navcons/info.png'
 		} else if (icon === 'bug') {
 			return '/assets/navcons/bug.png'
+		} else if (icon === 'minus') {
+			return '/assets/navcons/minus.png'
+		} else if (icon === 'plus') {
+			return '/assets/navcons/plus.png'
 		} else {
 			return
 		}

@@ -1,7 +1,18 @@
-import { Box, Divider, HStack, IconButton, Image, Spacer, VStack } from '@chakra-ui/react'
+import {
+	Box,
+	Button,
+	Divider,
+	HStack,
+	IconButton,
+	Image,
+	Spacer,
+	Text,
+	VStack,
+} from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import CustomIcon from './CustomIcon'
 import Logo from './Logo'
+import { useState } from 'react'
 
 const items = [
 	{ page: 'about', icon: 'info', href: '/about' },
@@ -11,30 +22,33 @@ const items = [
 export default function Header() {
 	const router = useRouter()
 	const currentRoute = router.pathname
+	const add = '/assets/navcons/add.png'
+	const minus = '/assets/navcons/minus.png'
+	const [icon, setIcon] = useState(add)
+	const [col, setCol] = useState(add)
+
+	const handleIcon = () => {
+		if (icon === add) {
+			setIcon(minus)
+		} else icon === minus
+		setIcon(add)
+	}
 
 	return (
 		<VStack
 			fontSize={'sm'}
 			alignItems={'stretch'}
 			position={'fixed'}
+			top={0}
 			bottom={0}
 			spacing={4}
 			right={0}
 			p={2}
-			backgroundColor={'blackAlpha.100'}
 		>
+			<Spacer />
 			{items.map(({ href, page, icon }, idx) => (
-				<VStack key={`item-key${idx}`}>
+				<VStack key={`item-key${idx}`} borderRadius={200}>
 					<CustomIcon icon={icon} href={href} page={page} />
-					{/* {href === currentRoute ? (
-							<Box
-								borderWidth={2}
-								borderColor={'white'}
-								borderStyle={'ridge'}
-								h={0.4}
-								w={'100%'}
-							/>
-						) : null} */}
 				</VStack>
 			))}
 		</VStack>
