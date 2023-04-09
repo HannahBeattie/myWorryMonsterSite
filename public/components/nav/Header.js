@@ -13,8 +13,9 @@ import { useRouter } from 'next/router'
 import CustomIcon from './CustomIcon'
 import Logo from './Logo'
 import { useState } from 'react'
+import HorizontalHide from './HorizontalHide'
 
-const items = [
+export const items = [
 	{ page: 'about', icon: 'info', href: '/about' },
 	{ page: 'report bug', icon: 'bug', href: '/bugZone' },
 ]
@@ -35,22 +36,27 @@ export default function Header() {
 	}
 
 	return (
-		<VStack
-			fontSize={'sm'}
-			alignItems={'stretch'}
-			position={'fixed'}
-			top={0}
-			bottom={0}
-			spacing={4}
-			right={0}
-			p={2}
-		>
-			<Spacer />
-			{items.map(({ href, page, icon }, idx) => (
-				<VStack key={`item-key${idx}`} borderRadius={200}>
-					<CustomIcon icon={icon} href={href} page={page} />
-				</VStack>
-			))}
-		</VStack>
+		<>
+			<HorizontalHide />
+
+			<VStack
+				display={{ base: 'none', lg: 'flex' }}
+				fontSize={'sm'}
+				alignItems={'stretch'}
+				position={'fixed'}
+				top={0}
+				bottom={0}
+				spacing={4}
+				right={0}
+				p={2}
+			>
+				<Spacer />
+				{items.map(({ href, page, icon }, idx) => (
+					<VStack key={`item-key${idx}`} borderRadius={200}>
+						<CustomIcon icon={icon} href={href} page={page} />
+					</VStack>
+				))}
+			</VStack>
+		</>
 	)
 }

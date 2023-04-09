@@ -12,6 +12,7 @@ function Logo() {
 	return (
 		<StyledNextLink href={'/'}>
 			<VStack
+				display={{ base: 'none', lg: 'flex' }}
 				position={'fixed'}
 				top={8}
 				left={4}
