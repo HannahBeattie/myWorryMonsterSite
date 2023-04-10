@@ -51,7 +51,7 @@ export default function Track({ children, index }) {
 					rotateZ: isOdd ? [5, 0] : [-5, 0],
 					rotateY: isOdd ? [5, 0] : [-5, 0],
 				}}
-				transition={{ duration: 0.6, delay, ease: 'easeInOut' }}
+				transition={{ duration: 0.3, delay, ease: 'easeInOut' }}
 			>
 				{children}
 			</motion.div>

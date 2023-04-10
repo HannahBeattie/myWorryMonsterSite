@@ -3,6 +3,7 @@ import React from 'react'
 import StyledNextLink from './StyledNextLink'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
+import DelayFadeIn from '../animation/DelayFadeIn'
 const scale = 14
 
 function Logo() {
@@ -10,51 +11,53 @@ function Logo() {
 	const currentRoute = router.pathname
 	const isCurrent = '/' === currentRoute
 	return (
-		<StyledNextLink href={'/'}>
-			<VStack
-				display={{ base: 'none', lg: 'flex' }}
-				position={'fixed'}
-				top={8}
-				left={4}
-				spacing={4}
-				opacity={isCurrent ? '100%' : '90%'}
-			>
-				<motion.div whileTap={{ rotate: 10 }}>
-					<HStack>
-						<IconButton
-							_hover={{ bg: 'transparent' }}
-							bg={'transparent'}
-							icon={
-								<Image
-									_hover={{ bg: 'whiteAlpha.200' }}
-									borderRadius={'20'}
-									h={scale}
-									w={scale}
-									alt={'monster logo'}
-									src={'/icons/favicon.png'}
-									backgroundColor={isCurrent ? 'whiteAlpha.100' : 'gray.900'}
-								/>
-							}
-						></IconButton>
-					</HStack>
-					{isCurrent && (
-						<VStack pt={2}>
-							<Text opacity={'70%'} fontSize={'xl'} maxW={20}>
-								W.M
-							</Text>
-						</VStack>
-					)}
+		<DelayFadeIn delay={3}>
+			<StyledNextLink href={'/'}>
+				<VStack
+					display={{ base: 'none', lg: 'flex' }}
+					position={'fixed'}
+					top={8}
+					left={4}
+					spacing={4}
+					opacity={isCurrent ? '100%' : '90%'}
+				>
+					<motion.div whileTap={{ rotate: 10 }}>
+						<HStack>
+							<IconButton
+								_hover={{ bg: 'transparent' }}
+								bg={'transparent'}
+								icon={
+									<Image
+										_hover={{ bg: 'whiteAlpha.200' }}
+										borderRadius={'20'}
+										h={scale}
+										w={scale}
+										alt={'monster logo'}
+										src={'/icons/favicon.png'}
+										backgroundColor={isCurrent ? 'whiteAlpha.100' : 'gray.900'}
+									/>
+								}
+							></IconButton>
+						</HStack>
+						{isCurrent && (
+							<VStack pt={2}>
+								<Text opacity={'70%'} fontSize={'xl'} maxW={20}>
+									W.M
+								</Text>
+							</VStack>
+						)}
 
-					{!isCurrent && (
-						<VStack pt={2}>
-							<Text opacity={'70%'} fontSize={'2xl'} fontWeight={900}>
-								back
-							</Text>
-						</VStack>
-					)}
-				</motion.div>
-			</VStack>
-		</StyledNextLink>
+						{!isCurrent && (
+							<VStack pt={2}>
+								<Text opacity={'70%'} fontSize={'2xl'} fontWeight={900}>
+									back
+								</Text>
+							</VStack>
+						)}
+					</motion.div>
+				</VStack>
+			</StyledNextLink>
+		</DelayFadeIn>
 	)
 }
 

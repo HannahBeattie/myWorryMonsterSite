@@ -34,6 +34,7 @@ export default function HorizontalHide() {
 				top={2}
 				right={0}
 				borderRadius={200}
+				_hover={{ bg: 'transparent' }}
 			>
 				<Image h={8} src={'/assets/navcons/add.png'} alt={'add icon'} />{' '}
 			</Button>

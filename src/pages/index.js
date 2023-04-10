@@ -6,6 +6,9 @@ import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
 import Logo from '../../public/components/nav/Logo'
 import HorizontalHide from '../../public/components/nav/HorizontalHide'
+import Appear from '../../public/components/animation/Apper'
+import Track from '../../public/components/animation/Track'
+import TiltPhone from '../../public/components/animation/TiltPhone'
 
 export default function Home() {
 	const sec1 = getItem('one')
@@ -31,6 +34,7 @@ export default function Home() {
 				overflow={'hidden'}
 			>
 				<LndImg />
+
 				<Feature
 					bg={'transparent'}
 					image={
@@ -48,6 +52,7 @@ export default function Home() {
 				</Feature>
 
 				<Feature
+					right={true}
 					bg={'transparent'}
 					image={
 						<MonsterImage
@@ -64,7 +69,6 @@ export default function Home() {
 					{sec3}
 				</Feature>
 				<Feature
-					right={true}
 					bg={'transparent'}
 					image={
 						<MonsterImage

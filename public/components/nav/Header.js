@@ -1,19 +1,9 @@
-import {
-	Box,
-	Button,
-	Divider,
-	HStack,
-	IconButton,
-	Image,
-	Spacer,
-	Text,
-	VStack,
-} from '@chakra-ui/react'
+import { Spacer, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import CustomIcon from './CustomIcon'
-import Logo from './Logo'
 import { useState } from 'react'
+import CustomIcon from './CustomIcon'
 import HorizontalHide from './HorizontalHide'
+import DelayFadeIn from '../animation/DelayFadeIn'
 
 export const items = [
 	{ page: 'about', icon: 'info', href: '/about' },
@@ -39,24 +29,26 @@ export default function Header() {
 		<>
 			<HorizontalHide />
 
-			<VStack
-				display={{ base: 'none', lg: 'flex' }}
-				fontSize={'sm'}
-				alignItems={'stretch'}
-				position={'fixed'}
-				top={0}
-				bottom={0}
-				spacing={4}
-				right={0}
-				p={2}
-			>
-				<Spacer />
-				{items.map(({ href, page, icon }, idx) => (
-					<VStack key={`item-key${idx}`} borderRadius={200}>
-						<CustomIcon icon={icon} href={href} page={page} />
-					</VStack>
-				))}
-			</VStack>
+			<DelayFadeIn delay={2}>
+				<VStack
+					display={{ base: 'none', lg: 'flex' }}
+					fontSize={'sm'}
+					alignItems={'stretch'}
+					position={'fixed'}
+					top={0}
+					bottom={0}
+					spacing={4}
+					right={0}
+					p={2}
+				>
+					<Spacer />
+					{items.map(({ href, page, icon }, idx) => (
+						<VStack key={`item-key${idx}`} borderRadius={200}>
+							<CustomIcon icon={icon} href={href} page={page} />
+						</VStack>
+					))}
+				</VStack>
+			</DelayFadeIn>
 		</>
 	)
 }
