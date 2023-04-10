@@ -16,10 +16,11 @@ import Buttons from './Buttons'
 import Title from './Title'
 import MonsterImage from './MonsterImage'
 import Subtitle from './Subtitle'
+import Appear from '../animation/Appear'
 
 function LndImg() {
 	return (
-		<>
+		<Appear>
 			<Grid
 				templateColumns={{ lg: 'repeat(5, 1fr)' }}
 				pr={{ lg: '12vw' }}
@@ -54,7 +55,7 @@ function LndImg() {
 			<VStack display={{ base: 'flex', md: 'none' }}>
 				<Buttons />
 			</VStack>
-		</>
+		</Appear>
 	)
 }
 
