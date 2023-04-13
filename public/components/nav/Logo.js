@@ -12,6 +12,7 @@ function Logo() {
 	return (
 		<StyledNextLink href={'/'}>
 			<VStack
+				zIndex={4}
 				display={{ base: 'none', lg: 'flex' }}
 				position={'fixed'}
 				top={8}
