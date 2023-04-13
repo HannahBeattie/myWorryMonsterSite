@@ -1,20 +1,42 @@
-import { List, Text } from '@chakra-ui/react'
+import { List, Text, VStack } from '@chakra-ui/react'
 import BlurbBox from '../landing/BlurbBox'
 import IconListItem from '../landing/IconListItem'
 
 export const one = {
 	item: (
 		<BlurbBox title={'What is a worry Monster?'}>
-			<Text>A Worry Monster likes to think of themselves as terribly scary.</Text>
-			<Text>In actuality, they are rather goofy lovable critters.</Text>
+			<VStack>
+				<Text>
+					A worry monster would have you believe that they are terribly scaresome,
+					fearsome creatures.
+				</Text>
+				<Text>
+					In acutality, they are rather loveable, goofy critters who get their name from
+					their unusual diet...
+				</Text>
+			</VStack>
+		</BlurbBox>
+	),
+}
+
+export const three = {
+	item: (
+		<BlurbBox>
 			<Text>
-				If you give your worry to a Worry Monster, they will hold onto it for as long as you
-				would like.
+				You see, if you give your worries to a worry monster they will hold on to them for
+				as long as you wish.
 			</Text>
-			<Text>No worry is too big, scary or heavy for a Worry Monster to carry.</Text>
 			<Text>
-				When you are ready to let go of a worry, the Worry Monster will simply gobble it up.
+				Should you ever be ready to part with a worry, they will gladly gobble it up.
 			</Text>
+			<Text>There is no worry too heavy, scary, small or big for a worry monster.</Text>
+			{/* <Text>Hannah is an independent artist and worrier.</Text>
+			<Text>
+				After being diagnosed with C-PTSD, autism and ADHD they have spent a lot of their
+				time looking for ways to befriend hurt, uncomfortable and confusing parts of their
+				brain.
+			</Text>
+			<Text>My Worry Monster is their first independent release.</Text> */}
 		</BlurbBox>
 	),
 }
@@ -40,20 +62,6 @@ export const two = {
 				the monster.
 			</Text>
 			<Text>I am still very much trying.</Text>
-		</BlurbBox>
-	),
-}
-
-export const three = {
-	item: (
-		<BlurbBox title={'About the creator'}>
-			<Text>Hannah is an independent artist and worrier.</Text>
-			<Text>
-				After being diagnosed with C-PTSD, autism and ADHD they have spent a lot of their
-				time looking for ways to befriend hurt, uncomfortable and confusing parts of their
-				brain.
-			</Text>
-			<Text>My Worry Monster is their first independent release.</Text>
 		</BlurbBox>
 	),
 }

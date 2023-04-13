@@ -6,6 +6,8 @@ import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
 import Logo from '../../public/components/nav/Logo'
 import HorizontalHide from '../../public/components/nav/HorizontalHide'
+import ContentTabs from '../../public/components/landing/ContentTabs'
+import Creator from '../../public/components/landing/Creator'
 
 export default function Home() {
 	const sec1 = getItem('one')
@@ -26,7 +28,7 @@ export default function Home() {
 				alignItems={'stretch'}
 				as={'main'}
 				spacing={4}
-				py={4}
+				pt={4}
 				maxW={'100vw'}
 				overflow={'hidden'}
 			>
@@ -48,38 +50,21 @@ export default function Home() {
 				</Feature>
 
 				<Feature
+					right={true}
 					bg={'transparent'}
 					image={
 						<MonsterImage
-							im={10}
+							im={12}
 							props={{
 								mt: 0,
+								flex: 1,
 								maxH: 600,
 								borderRadius: 20,
-								shadow: true,
 							}}
 						/>
 					}
 				>
 					{sec3}
-				</Feature>
-				<Feature
-					right={true}
-					bg={'transparent'}
-					image={
-						<MonsterImage
-							im={1}
-							props={{
-								mt: 0,
-								maxH: 600,
-								borderRadius: 20,
-								shadow: false,
-								className: 'shadow',
-							}}
-						/>
-					}
-				>
-					{sec4}
 				</Feature>
 			</VStack>
 		</>
