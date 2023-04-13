@@ -17,13 +17,14 @@ import MonsterImage from '../../public/components/landing/MonsterImage'
 import { getItem } from '../../public/components/content/landingContent'
 import BlurbBox from '../../public/components/landing/BlurbBox'
 import SmoothScroll from '../../public/components/SmoothScroll'
+import AboutContent from '../../public/components/AboutContent'
 
 function About() {
 	return (
 		<>
-			<VStack pt={'10vh'} position={'fixed'} left={0} right={0}>
-				<Heading>HOW I MET THE WORRY MONSTER</Heading>
-				<Text>By Hannah Beattie</Text>
+			<VStack pt={'10vh'}>
+				<Heading fontSize={{ base: 'xl', md: '4xl' }}>HOW I MET THE WORRY MONSTER</Heading>
+				<Text fontSize={{ md: 'xl' }}>By Hannah Beattie</Text>
 			</VStack>
 			<SmoothScroll />
 		</>

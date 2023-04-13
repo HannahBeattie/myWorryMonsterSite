@@ -3,13 +3,13 @@ import BlurbBox from '../landing/BlurbBox'
 
 const imProps = {
 	maxH: { base: 300, md: 400, lg: 500 },
-	mt: 8,
+	mt: 6,
 }
 
 export const first = {
 	content: (
 		<BlurbBox>
-			<Text>When I was a child I was VERY VERY SCARED. </Text>
+			<Text>When I was a child I was VERY VERY AFRAID. </Text>
 		</BlurbBox>
 	),
 
@@ -154,15 +154,15 @@ export const fifth = {
 export const sixth = {
 	content: (
 		<BlurbBox>
-			<Text>Eventually, I grew-</Text>
-			<Text>All the way into a grown-up.</Text>
+			<Text>I grew Up.</Text>
 			<Text>I was diagnosed with some fancy alphabet letters;</Text>
 			<Text>*ASD, ADHD, CPTSD and MDD.</Text>
 			<Text>
 				I was told that these alphabet letters could make my brain very loud and tired
 				sometimes.
 			</Text>
-			<Text fontSize={'lg'}>
+
+			<Text fontSize={{ base: 'sm' }}>
 				*ASD is for : Autism spectrum disorder, ADHD is for: Attention Deficit Hyperactivity
 				Disorder, CPTSD is for : Complex PTSD & MDD is for major depressive disorder
 			</Text>
