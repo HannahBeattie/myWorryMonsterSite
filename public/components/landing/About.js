@@ -1,4 +1,4 @@
-import { Center, Image, SimpleGrid, Spacer, Text, VStack } from '@chakra-ui/react'
+import { Center, Heading, Image, SimpleGrid, Spacer, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import BlurbBox from './BlurbBox'
 

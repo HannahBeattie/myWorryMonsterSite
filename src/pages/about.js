@@ -21,6 +21,10 @@ import SmoothScroll from '../../public/components/SmoothScroll'
 function About() {
 	return (
 		<>
+			<VStack pt={'10vh'} position={'fixed'} left={0} right={0}>
+				<Heading>HOW I MET THE WORRY MONSTER</Heading>
+				<Text>By Hannah Beattie</Text>
+			</VStack>
 			<SmoothScroll />
 		</>
 	)

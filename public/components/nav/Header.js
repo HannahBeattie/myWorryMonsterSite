@@ -17,7 +17,7 @@ import HorizontalHide from './HorizontalHide'
 
 export const items = [
 	{ page: 'Origin Story', icon: 'info', href: '/about' },
-	{ page: 'report bug', icon: 'bug', href: '/bugZone' },
+	{ page: 'Report a bug', icon: 'bug', href: '/bugZone' },
 ]
 
 export default function Header() {
