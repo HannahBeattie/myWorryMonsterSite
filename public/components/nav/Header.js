@@ -16,7 +16,7 @@ import { useState } from 'react'
 import HorizontalHide from './HorizontalHide'
 
 export const items = [
-	{ page: 'about', icon: 'info', href: '/about' },
+	{ page: 'Origin Story', icon: 'info', href: '/about' },
 	{ page: 'report bug', icon: 'bug', href: '/bugZone' },
 ]
 
