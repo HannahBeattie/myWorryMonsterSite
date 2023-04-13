@@ -2,8 +2,8 @@ import { Box, Image, Text, VStack } from '@chakra-ui/react'
 import BlurbBox from '../landing/BlurbBox'
 
 const imProps = {
-	maxH: { base: 300, md: 400, lg: 500 },
-	mt: 6,
+	maxH: { base: 300, sm: 400, md: 400, lg: 500 },
+	mt: { base: 8, sm: 14 },
 }
 
 export const first = {

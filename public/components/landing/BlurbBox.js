@@ -14,11 +14,12 @@ function BlurbBox({ title, children }) {
 
 			<VStack
 				alignItems={'stretch'}
+				px={8}
 				flex={1}
 				justifyContent={{ base: 'stretch', lg: 'stretch' }}
 				alignSelf={{ base: 'center', lg: 'center' }}
 				alignContent={{ base: 'center', lg: 'center' }}
-				fontSize={{ base: 'xl', md: '2xl', lg: '4xl' }}
+				fontSize={{ base: 'xl', sm: '2xl', md: '3xl', lg: '4xl' }}
 			>
 				{children}
 			</VStack>

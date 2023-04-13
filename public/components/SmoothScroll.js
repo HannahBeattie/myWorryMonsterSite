@@ -102,7 +102,7 @@ const SmoothScroll = () => {
 			<VStack ref={ghostRef} style={{ height: scrollRange }} className='ghost' />
 			<VStack flex={1} maxH={'100vh'} py={100}>
 				<Image maxH={'60vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} />
-				<Text>SPECIAL THANKS TO: MIKEY LEMMON</Text>
+				<Text fontSize={'2xl'}>SPECIAL THANKS TO: MIKEY LEMMON</Text>
 			</VStack>
 		</>
 	)

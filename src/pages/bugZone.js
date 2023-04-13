@@ -6,7 +6,14 @@ import StyledNextLink from '../../public/components/nav/StyledNextLink'
 function BugZone() {
 	const sec2 = getItem('two')
 	return (
-		<VStack alignItems={'center'} justify={'center'} flex={1} fontSize={'2xl'}>
+		<VStack
+			alignItems={'center'}
+			justify={'center'}
+			flex={1}
+			fontSize={'2xl'}
+			px={14}
+			spacing={10}
+		>
 			<Heading>REPORT A BUG </Heading>
 			<VStack alignItems={'stretch'}>
 				<Text>Something broken?</Text>
