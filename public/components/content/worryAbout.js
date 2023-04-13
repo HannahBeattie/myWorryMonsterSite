@@ -37,8 +37,8 @@ export const seccond = {
 	content: (
 		<BlurbBox>
 			<Text>
-				My heart would THUMP like a DRUM and my mouth would feel like glue as I thought of
-				it watching, waiting, HUNGRY.
+				My heart would THUMP like a DRUM and my mouth would feel like cotton and glue as I
+				thought of his HUNGRY, SNARLING, GROWLS.
 			</Text>
 		</BlurbBox>
 	),
@@ -57,9 +57,7 @@ export const seccond = {
 export const twoPointTwo = {
 	content: (
 		<BlurbBox>
-			<Text>
-				I made many PLANS, PATHS and SCHEMES with witch to trick the monster and excape.
-			</Text>
+			<Text>I made many PLANS, PATHS and SCHEMES with witch to trick the monster.</Text>
 		</BlurbBox>
 	),
 
@@ -69,7 +67,7 @@ export const twoPointTwo = {
 export const twoPointThree = {
 	content: (
 		<BlurbBox>
-			<Text>...but I didn&apos;t feel much safer.</Text>
+			<Text>...but my tummy still hurt.</Text>
 		</BlurbBox>
 	),
 
@@ -88,8 +86,9 @@ export const third = {
 	content: (
 		<BlurbBox>
 			<Text>I worried about hurting the monster&apos;s feelings.</Text>
-			<Text>I worried the monster would feel ugly, lonely and embarrassed.</Text>
-			<Text>I worried the monster would wish it wasn&apos;t a monster at all.</Text>
+			<Text>What if it felt ugly, lonely or embarrassed?</Text>
+			<Text>What if he wished he wasn&apos;t a monster at all?</Text>
+			<Text>What if it wanted a friend?</Text>
 		</BlurbBox>
 	),
 
@@ -106,7 +105,7 @@ export const third = {
 export const thirdPointThree = {
 	content: (
 		<BlurbBox>
-			<Text>I also felt terribly GUILTY.</Text>
+			<Text>Eventually, I also felt GUILTY.</Text>
 		</BlurbBox>
 	),
 
@@ -116,7 +115,7 @@ export const thirdPointThree = {
 export const forth = {
 	content: (
 		<BlurbBox>
-			<Text>So one day I did the VERY BRAVE THING...</Text>
+			<Text>So one day, I did the VERY BRAVE THING...</Text>
 			<Text>
 				In a show of good faith, I took a DEEP BREATH and dangled my little feet off the
 				bed.
@@ -129,13 +128,14 @@ export const forth = {
 export const fifth = {
 	content: (
 		<BlurbBox>
-			<Text>So the monser and I became friends. </Text>
+			<Text>Which meant, of cores, that we were friends.</Text>
 			<Text>
-				He would sit beside me; Patient, scary and invisable and I would tell him stories.
+				The Monster would sit beside me- Patient, scary and invisable and I would tell him
+				stories.
 			</Text>
 			<Text>
-				I would tell him about things that made me feel confused or bad or sick and He would
-				tell me all about being a monster.
+				I would make him laugh and make up stories and tell him about things that made me
+				feel confused or bad or sick.
 			</Text>
 		</BlurbBox>
 	),
@@ -154,12 +154,13 @@ export const fifth = {
 export const sixth = {
 	content: (
 		<BlurbBox>
-			<Text>After a while, I grew up.</Text>
-			<Text>I was diagnosed with some fancy alphabet letters-</Text>
+			<Text>Eventually, I grew-</Text>
+			<Text>All the way into a grown-up.</Text>
+			<Text>I was diagnosed with some fancy alphabet letters;</Text>
 			<Text>*ASD, ADHD, CPTSD and MDD.</Text>
 			<Text>
-				I was told that these alphabet letters could make my brain feel very loud and very
-				tired.
+				I was told that these alphabet letters could make my brain very loud and tired
+				sometimes.
 			</Text>
 			<Text fontSize={'lg'}>
 				*ASD is for : Autism spectrum disorder, ADHD is for: Attention Deficit Hyperactivity
@@ -174,9 +175,9 @@ export const sixth = {
 export const seventh = {
 	content: (
 		<BlurbBox>
-			<Text>Luckily, I have kept my promise-</Text>
-			<Text>I have been done my very best to be patient and kind with the monster.</Text>
-			<Text>Even when I feel like I might be swallowed up.</Text>
+			<Text>But it&apos;s ok because, I have kept my promise.</Text>
+			<Text>That is, I know very well how to be patient and kind with monsters.</Text>
+			<Text>Even when it feels as though you may be swallowed up, GULP!</Text>
 		</BlurbBox>
 	),
 	img: <Image {...imProps} src={'/assets/mnstr/9.png'} alt={'feet'} />,
@@ -188,7 +189,7 @@ export const eight = {
 			<Text>
 				So, if you would like a friend, you could do a lot worse than a worry monster...
 			</Text>
-			<Text>Even though you are obviously very, very brave.</Text>
+			<Text>Even though you are VERY, VERY brave.</Text>
 		</BlurbBox>
 	),
 	img: (

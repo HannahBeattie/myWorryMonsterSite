@@ -23,9 +23,8 @@ const SmoothScroll = () => {
 
 	const { scrollYProgress } = useScroll()
 	const transform = useTransform(scrollYProgress, [0, 1], [0, -scrollRange + viewportW])
-	const physics = { damping: 10, mass: 1, stiffness: 100 }
+	const physics = { damping: 100, mass: 3, stiffness: 300 }
 	const spring = useSpring(transform, physics)
-
 	const one = getSec('first')
 	const two = getSec('firstPR')
 	const twoPointTwo = getSec('twoPointTwo')
