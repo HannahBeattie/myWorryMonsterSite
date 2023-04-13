@@ -31,6 +31,7 @@ const SmoothScroll = () => {
 	const twoPointTwo = getSec('twoPointTwo')
 	const twoPointThree = getSec('twoPointThree')
 	const three = getSec('seccond')
+	const thirdPointThree = getSec('thirdPointThree')
 	const four = getSec('third')
 	const five = getSec('forth')
 	const six = getSec('fifth')
@@ -69,6 +70,13 @@ const SmoothScroll = () => {
 							isRight={true}
 							content={twoPointThree.content}
 							img={twoPointThree.img}
+						/>
+					</VStack>
+					<VStack>
+						<About
+							isRight={true}
+							content={thirdPointThree.content}
+							img={thirdPointThree.img}
 						/>
 					</VStack>
 					<VStack>

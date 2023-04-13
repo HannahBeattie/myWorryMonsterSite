@@ -18,7 +18,7 @@ export const first = {
 			shadow={'dark-lg'}
 			borderRadius={50}
 			{...imProps}
-			src={'/assets/scared.png'}
+			src={'/assets/mnstr/s2.png'}
 			alt={'scared kid'}
 		/>
 	),
@@ -38,7 +38,7 @@ export const seccond = {
 		<BlurbBox>
 			<Text>
 				My heart would THUMP like a DRUM and my mouth would feel like glue as I thought of
-				it watching... waiting... HUNGRY.
+				it watching, waiting, HUNGRY.
 			</Text>
 		</BlurbBox>
 	),
@@ -57,7 +57,9 @@ export const seccond = {
 export const twoPointTwo = {
 	content: (
 		<BlurbBox>
-			<Text>I made many PLANS, PATHS and SCHEMES to trick the monster.</Text>
+			<Text>
+				I made many PLANS, PATHS and SCHEMES with witch to trick the monster and excape.
+			</Text>
 		</BlurbBox>
 	),
 
@@ -76,7 +78,7 @@ export const twoPointThree = {
 			{...imProps}
 			shadow={'dark-lg'}
 			borderRadius={50}
-			src={'/assets/scared.png'}
+			src={'/assets/mnstr/s1.png'}
 			alt={'feet'}
 		/>
 	),
@@ -85,10 +87,26 @@ export const twoPointThree = {
 export const third = {
 	content: (
 		<BlurbBox>
-			<Text>Worst of all, I felt terribly, sickningly, GUILTY.</Text>
 			<Text>I worried about hurting the monster&apos;s feelings.</Text>
 			<Text>I worried the monster would feel ugly, lonely and embarrassed.</Text>
-			<Text>I worried it would wish it wasn&apos;t a monster.</Text>
+			<Text>I worried the monster would wish it wasn&apos;t a monster at all.</Text>
+		</BlurbBox>
+	),
+
+	img: (
+		<Image
+			{...imProps}
+			borderRadius={50}
+			shadow={'dark-lg'}
+			src={'/assets/mnstr/no.png'}
+			alt={'feet'}
+		/>
+	),
+}
+export const thirdPointThree = {
+	content: (
+		<BlurbBox>
+			<Text>I also felt terribly GUILTY.</Text>
 		</BlurbBox>
 	),
 
@@ -98,35 +116,26 @@ export const third = {
 export const forth = {
 	content: (
 		<BlurbBox>
-			<Text>So one day I did the VERY BRAVE THING.</Text>
+			<Text>So one day I did the VERY BRAVE THING...</Text>
 			<Text>
-				In a show of good faith, I took a DEEP BREATH and dangled my little bare feet under
-				the bed.
+				In a show of good faith, I took a DEEP BREATH and dangled my little feet off the
+				bed.
 			</Text>
 		</BlurbBox>
 	),
 
-	img: (
-		<Image
-			shadow={'dark-lg'}
-			borderRadius={50}
-			{...imProps}
-			src={'/assets/feet.png'}
-			alt={'feet'}
-		/>
-	),
+	img: <Image {...imProps} src={'/assets/mnstr/foots.png'} alt={'feet'} />,
 }
 export const fifth = {
 	content: (
 		<BlurbBox>
-			<Text>Of-cores this meant that me and the monster were friends.</Text>
-			<Text>BEST FRIENDS.</Text>
+			<Text>So the monser and I became friends. </Text>
 			<Text>
 				He would sit beside me; Patient, scary and invisable and I would tell him stories.
 			</Text>
 			<Text>
-				I would tell him things that made me feel confused or bad or sick and he would
-				listen and tell jokes. He never became bored or angry or impatient.
+				I would tell him about things that made me feel confused or bad or sick and He would
+				tell me all about being a monster.
 			</Text>
 		</BlurbBox>
 	),
@@ -149,7 +158,7 @@ export const sixth = {
 			<Text>I was diagnosed with some fancy alphabet letters-</Text>
 			<Text>*ASD, ADHD, CPTSD and MDD.</Text>
 			<Text>
-				I was told that these alphabet letters could make your brain feel very loud and
+				I was told that these alphabet letters could make my brain feel very loud and very
 				tired.
 			</Text>
 			<Text fontSize={'lg'}>
@@ -167,7 +176,7 @@ export const seventh = {
 		<BlurbBox>
 			<Text>Luckily, I have kept my promise-</Text>
 			<Text>I have been done my very best to be patient and kind with the monster.</Text>
-			<Text>Even when I feel as though I may be swallowed all up.</Text>
+			<Text>Even when I feel like I might be swallowed up.</Text>
 		</BlurbBox>
 	),
 	img: <Image {...imProps} src={'/assets/mnstr/9.png'} alt={'feet'} />,
@@ -176,11 +185,10 @@ export const seventh = {
 export const eight = {
 	content: (
 		<BlurbBox>
-			<Text>I want to share My Worry Monster with anyone who needs or wants a friend.</Text>
 			<Text>
-				As a gentle reminder that there is no need to be afraid of being afraid...a monster
-				is just a monster, after all.
+				So, if you would like a friend, you could do a lot worse than a worry monster...
 			</Text>
+			<Text>Even though you are obviously very, very brave.</Text>
 		</BlurbBox>
 	),
 	img: (
@@ -207,6 +215,8 @@ export function getSec(key) {
 			return twoPointThree
 		case 'third':
 			return third
+		case 'thirdPointThree':
+			return thirdPointThree
 		case 'forth':
 			return forth
 		case 'fifth':
