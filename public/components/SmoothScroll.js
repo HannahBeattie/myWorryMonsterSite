@@ -1,4 +1,4 @@
-import { Center, HStack, Image, VStack } from '@chakra-ui/react'
+import { HStack, Image, VStack } from '@chakra-ui/react'
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
@@ -23,11 +23,13 @@ const SmoothScroll = () => {
 
 	const { scrollYProgress } = useScroll()
 	const transform = useTransform(scrollYProgress, [0, 1], [0, -scrollRange + viewportW])
-	const physics = { damping: 15, mass: 0.27, stiffness: 55 }
+	const physics = { damping: 10, mass: 1, stiffness: 100 }
 	const spring = useSpring(transform, physics)
 
 	const one = getSec('first')
 	const two = getSec('firstPR')
+	const twoPointTwo = getSec('twoPointTwo')
+	const twoPointThree = getSec('twoPointThree')
 	const three = getSec('seccond')
 	const four = getSec('third')
 	const five = getSec('forth')
@@ -55,8 +57,19 @@ const SmoothScroll = () => {
 					<VStack>
 						<About isRight={true} content={two.content} img={two.img} />
 					</VStack>
+
 					<VStack>
 						<About isRight={true} content={three.content} img={three.img} />
+					</VStack>
+					<VStack>
+						<About isRight={true} content={twoPointTwo.content} img={twoPointTwo.img} />
+					</VStack>
+					<VStack>
+						<About
+							isRight={true}
+							content={twoPointThree.content}
+							img={twoPointThree.img}
+						/>
 					</VStack>
 					<VStack>
 						<About isRight={true} content={four.content} img={four.img} />
