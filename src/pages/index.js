@@ -1,13 +1,9 @@
 import { VStack } from '@chakra-ui/react'
 import Head from 'next/head'
-import LndImg from '../../public/components/landing/LndImg'
-import MonsterImage from '../../public/components/landing/MonsterImage'
 import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
-import Logo from '../../public/components/nav/Logo'
-import HorizontalHide from '../../public/components/nav/HorizontalHide'
-import ContentTabs from '../../public/components/landing/ContentTabs'
-import Creator from '../../public/components/landing/Creator'
+import LndImg from '../../public/components/landing/LndImg'
+import MonsterImage from '../../public/components/landing/MonsterImage'
 
 export default function Home() {
 	const sec1 = getItem('one')

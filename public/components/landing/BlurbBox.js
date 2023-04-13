@@ -3,10 +3,23 @@ import React from 'react'
 
 function BlurbBox({ title, children }) {
 	return (
-		<Container>
+		<Container
+			flex={1}
+			justifySelf={{ base: 'center', lg: 'center' }}
+			alignSelf={{ base: 'center', lg: 'center' }}
+			alignContent={{ base: 'center', lg: 'center' }}
+			maxW={'100vw'}
+		>
 			<Heading>{title}</Heading>
 
-			<VStack p={8} alignItems={'stretch'} fontSize={{ base: 'lg', lg: '5xl' }} spacing={8}>
+			<VStack
+				alignItems={'stretch'}
+				flex={1}
+				justifyContent={{ base: 'stretch', lg: 'stretch' }}
+				alignSelf={{ base: 'center', lg: 'center' }}
+				alignContent={{ base: 'center', lg: 'center' }}
+				fontSize={{ base: 'xl', md: '2xl', lg: '4xl' }}
+			>
 				{children}
 			</VStack>
 		</Container>

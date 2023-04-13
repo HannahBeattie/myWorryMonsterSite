@@ -30,12 +30,12 @@ export default function HorizontalHide() {
 			<Button
 				{...getButtonProps()}
 				bg={'transparent'}
-				position={'absolute'}
-				top={2}
+				position={'fixed'}
+				top={{ base: 2, md: 4 }}
 				right={0}
 				borderRadius={200}
 			>
-				<Image h={8} src={'/assets/navcons/add.png'} alt={'add icon'} />{' '}
+				<Image h={{ base: 8, md: 10 }} src={'/assets/navcons/add.png'} alt={'add icon'} />{' '}
 			</Button>
 
 			<motion.div
