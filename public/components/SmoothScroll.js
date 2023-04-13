@@ -1,9 +1,10 @@
-import { HStack, Image, VStack } from '@chakra-ui/react'
+import { Button, HStack, Image, Text, VStack } from '@chakra-ui/react'
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 import About from './landing/About'
 import { getSec, sections } from './content/worryAbout'
+import Buttons from './landing/Buttons'
 
 const SmoothScroll = () => {
 	const scrollRef = useRef(null)
@@ -100,7 +101,8 @@ const SmoothScroll = () => {
 			</motion.section>
 			<VStack ref={ghostRef} style={{ height: scrollRange }} className='ghost' />
 			<VStack flex={1} maxH={'100vh'}>
-				<Image maxH={'90vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} />
+				<Text>SPECIAL THANKS TO: MIKEY LEMMON</Text>
+				<Image maxH={'80vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} />
 			</VStack>
 		</>
 	)
