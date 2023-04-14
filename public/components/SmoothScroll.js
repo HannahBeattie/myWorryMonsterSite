@@ -1,8 +1,9 @@
-import { HStack, Image, Text, VStack } from '@chakra-ui/react'
+import { HStack, Image, Spacer, Text, VStack } from '@chakra-ui/react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { getSec } from './content/worryAbout'
 import About from './landing/About'
+import StyledNextLink from './nav/StyledNextLink'
 
 const SmoothScroll = () => {
 	const scrollRef = useRef(null)
@@ -70,10 +71,23 @@ const SmoothScroll = () => {
 			<VStack style={{ height: scrollRange }} className='ghost' />
 			{scrollRange > 0 && (
 				<VStack flex={1} maxH={'100vh'} py={100}>
-					<Image maxH={'60vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} />
+					<Image maxH={'60vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} mb={-10} />
 					<Text color={'gray.500'} fontSize={{ lg: 'xl' }}>
 						SPECIAL THANKS TO: MIKEY LEMMON
 					</Text>
+					<StyledNextLink href={'/'}>
+						<HStack>
+							<Image
+								maxH={{ base: 6 }}
+								src={'/assets/navcons/home.png'}
+								alt={'feet'}
+							/>
+							<VStack>
+								<Spacer />
+								<Text>Home</Text>
+							</VStack>
+						</HStack>
+					</StyledNextLink>
 				</VStack>
 			)}
 		</>

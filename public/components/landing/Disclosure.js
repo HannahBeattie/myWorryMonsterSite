@@ -22,7 +22,7 @@ function Disclosure({ title, children, props, intro, more }) {
 
 	return (
 		<>
-			<VStack px={20}>
+			<VStack px={{ base: 4, lg: 20 }}>
 				<Container
 					bg={'gray.200'}
 					py={4}
@@ -52,9 +52,9 @@ function Disclosure({ title, children, props, intro, more }) {
 							fontFamily={'Gaegu'}
 							zIndex={4}
 							bg={'gray.900'}
-							w={10}
+							w={{ base: 6, lg: 10 }}
 							borderRadius={200}
-							h={10}
+							h={{ base: 6, lg: 10 }}
 							size={'4xl'}
 							_hover={{ bg: 'cyan.800' }}
 							onClick={() => {

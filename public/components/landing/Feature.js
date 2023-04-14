@@ -6,17 +6,17 @@ export default function Feature({ image, children, right, bg }) {
 	return (
 		<>
 			<Appear>
-				<Grid templateColumns={{ lg: 'repeat(5, 1fr)' }} pl={{ md: '4vh', lg: '8vw' }}>
+				<Grid templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(5, 1fr)' }}>
 					{!right && <GridItem colSpan={{ lg: 2 }}>{image}</GridItem>}
 					{right && (
-						<GridItem display={{ base: 'auto', lg: 'none' }} colSpan={{ lg: 2 }}>
+						<GridItem display={{ base: 'flex', lg: 'none' }} colSpan={{ lg: 2 }}>
 							{image}
 						</GridItem>
 					)}
 					<GridItem
 						colSpan={{ base: 1, lg: 3 }}
-						p={{ base: 4, md: 8, lg: 10 }}
-						py={{ base: 8 }}
+						justifyContent={'center'}
+						alignContent={'center'}
 					>
 						<VStack bg={bg ? bg : 'blackAlpha.400'} w={'100%'} h={'100%'} p={8}>
 							{children}

@@ -1,4 +1,4 @@
-import { HStack, Heading, Link, List, Text, VStack } from '@chakra-ui/react'
+import { HStack, Heading, Link, List, Spacer, Text, VStack } from '@chakra-ui/react'
 import BlurbBox from '../landing/BlurbBox'
 import IconListItem from '../landing/IconListItem'
 import Disclosure from '../landing/Disclosure'
@@ -134,51 +134,51 @@ export const five = {
 }
 export const six = {
 	item: (
-		<BlurbBox>
-			<VStack fontSize={'2xl'} alignItems={'stretch'}>
-				<Heading>About the creator</Heading>
-				<Text>
-					Hannah Beattie is a freelance artist, coder and storyteller from Aotearoa, New
-					Zealand.
-				</Text>
-				<Text>
-					She credits her insatiable curiosity to her autism and ADHD and is interested in
-					destigmatizing difference and bringing neutral language into mental health and
-					disability conversations.
-				</Text>
+		<VStack fontSize={{ base: '2xl', lg: '2xl' }} alignItems={'stretch'}>
+			<Heading>About the creator</Heading>
+			<Text>
+				Hannah Beattie is a freelance artist, coder and storyteller from Aotearoa, New
+				Zealand.
+			</Text>
+			<Text>
+				She credits her insatiable curiosity to her autism and ADHD and is interested in
+				destigmatizing difference and bringing neutral language into mental health and
+				disability conversations.
+			</Text>
 
-				<HStack>
-					<Text>You can Check out her website</Text>
-					<NextLink
-						target='blank'
-						href={'https://brain-storm-delta.vercel.app/'}
-						passHref
-						legacyBehavior
+			<Text>
+				You can Check out her website{' '}
+				<NextLink
+					target='blank'
+					href={'https://brain-storm-delta.vercel.app/'}
+					passHref
+					legacyBehavior
+				>
+					<Link
+						color={'cyan.300'}
+						_hover={{
+							textDecoration: 'none',
+						}}
 					>
-						<Link
-							_hover={{
-								textDecoration: 'none',
-							}}
-						>
-							<Text color={'cyan.400'}>here.</Text>
-						</Link>
-					</NextLink>
-				</HStack>
+						here.
+					</Link>
+				</NextLink>
+			</Text>
 
-				<HStack>
-					<Text>Or Read The Worry Monster origin story </Text>
-					<NextLink href={'/about'} passHref legacyBehavior>
-						<Link
-							_hover={{
-								textDecoration: 'none',
-							}}
-						>
-							<Text color={'teal.400'}>here.</Text>
-						</Link>
-					</NextLink>
-				</HStack>
-			</VStack>
-		</BlurbBox>
+			<Text>
+				Or Read The Worry Monster origin story
+				<NextLink href={'/about'} passHref legacyBehavior>
+					<Link
+						color={'purple.300'}
+						_hover={{
+							textDecoration: 'none',
+						}}
+					>
+						here.
+					</Link>
+				</NextLink>
+			</Text>
+		</VStack>
 	),
 }
 
