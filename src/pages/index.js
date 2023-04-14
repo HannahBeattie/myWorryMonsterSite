@@ -92,7 +92,7 @@ export default function Home() {
 
 						<Image maxH={400} src={'/assets/mnstr/tg.png'} alt={'doodle'} />
 					</HStack>
-					<HStack px={8}>
+					<HStack px={8} pb={'30vh'}>
 						<Button
 							bg={'transparent'}
 							right={0}
@@ -110,10 +110,6 @@ export default function Home() {
 						</Button>
 						<Spacer />
 					</HStack>
-				</VStack>
-
-				<VStack>
-					<Image src={'/blue/banner.png'} alt={'doodle'} />
 				</VStack>
 			</VStack>
 		</>
