@@ -5,6 +5,7 @@ import {
 	GridItem,
 	Heading,
 	HStack,
+	Image,
 	SimpleGrid,
 	Spacer,
 	Stack,
@@ -49,7 +50,10 @@ function LndImg() {
 				</GridItem>
 
 				<GridItem colSpan={{ lg: 2 }}>
-					<MonsterImage im={8} />
+					<Image
+						alt={'The worry monster holdin two bags of worries'}
+						src='/assets/mnstr/wwb.png'
+					/>
 				</GridItem>
 			</Grid>
 			<VStack display={{ base: 'flex', md: 'none' }}>

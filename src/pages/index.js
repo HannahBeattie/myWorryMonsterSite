@@ -1,4 +1,4 @@
-import { Accordion, Container, Heading, VStack } from '@chakra-ui/react'
+import { Accordion, Container, HStack, Heading, Image, Spacer, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
 import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
@@ -66,25 +66,21 @@ export default function Home() {
 				</Feature>
 
 				{sec4}
+
 				{sec5}
 
-				<Feature
-					bg={'transparent'}
-					right={true}
-					image={
-						<MonsterImage
-							im={12}
-							props={{
-								mt: 0,
-								flex: 1,
-								maxH: 600,
-								borderRadius: 20,
-							}}
-						/>
-					}
-				>
+				<VStack px={100} py={8} alignItems={'stretch'}>
 					{sec6}
-				</Feature>
+				</VStack>
+				<MonsterImage
+					im={12}
+					props={{
+						mt: 0,
+						flex: 1,
+						maxH: 600,
+						borderRadius: 20,
+					}}
+				/>
 			</VStack>
 		</>
 	)
