@@ -38,10 +38,9 @@ export default function Home() {
 				flex={1}
 				alignItems={'stretch'}
 				as={'main'}
-				spacing={4}
-				pt={4}
 				maxW={'100vw'}
 				overflow={'hidden'}
+				spacing={200}
 			>
 				<LndImg />
 				<Feature
@@ -78,28 +77,43 @@ export default function Home() {
 					{sec3}
 				</Feature>
 
-				{sec4}
-
-				{sec5}
-
-				<VStack px={100} py={8} alignItems={'stretch'}>
-					{sec6}
+				<VStack spacing={10}>
+					{sec4}
+					{sec5}
 				</VStack>
-				<VStack py={10}>
+				<VStack alignItems={'stretch'} px={'10vw'}>
 					<HStack>
 						<Image maxH={300} src={'/assets/mnstr/9.png'} alt={'doodle'} />
+
+						<Spacer />
 					</HStack>
-					<Button
-						bg={'gray.900'}
-						_hover={{ bg: 'teal.900' }}
-						shadow={'dark-lg'}
-						borderRadius={200}
-						onClick={() => {
-							window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-						}}
-					>
-						<Text textAlign={'center'}>Scroll to top</Text>
-					</Button>
+					<HStack>
+						{sec6}
+
+						<Image maxH={400} src={'/assets/mnstr/tg.png'} alt={'doodle'} />
+					</HStack>
+					<HStack px={8}>
+						<Button
+							bg={'transparent'}
+							right={0}
+							left={0}
+							borderRadius={200}
+							shadow={'inner'}
+							_hover={{ bg: 'transparent' }}
+							onClick={() => {
+								window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+							}}
+						>
+							<Text color={'pink.300'} textAlign={'center'} fontSize={'2xl'} pt={4}>
+								Back to top
+							</Text>
+						</Button>
+						<Spacer />
+					</HStack>
+				</VStack>
+
+				<VStack>
+					<Image src={'/blue/banner.png'} alt={'doodle'} />
 				</VStack>
 			</VStack>
 		</>

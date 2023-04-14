@@ -7,7 +7,7 @@ function Title() {
 			pt={{ sm: '6vh', md: '4vh', lg: 0 }}
 			fontSize={{ base: '6xl', sm: '6xl', lg: '8xl', xl: '9xl' }}
 			lineHeight={0.8}
-			textAlign={{ base: 'center', md: 'start' }}
+			textAlign={{ base: 'center', lg: 'start' }}
 		>
 			My Worry Monster
 		</Heading>

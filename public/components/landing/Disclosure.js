@@ -16,24 +16,33 @@ function Disclosure({ title, children, props, intro, more }) {
 	const disclosureProps = getDisclosureProps()
 	const vstackProps = {
 		alignItems: 'stretch',
-		spacing: 4,
 	}
 	console.log('disclosure is', disclosureProps)
 	const { hidden } = disclosureProps
 
 	return (
 		<>
-			<VStack fontSize={'3xl'} px={20}>
-				<Container bg={'blackAlpha.800'} py={4} borderRadius={'2xl'} shadow={'dark-lg'}>
-					<Container maxW={'70vw'}>
-						<Heading color={'gray.300'} py={4}>
+			<VStack px={20}>
+				<Container
+					bg={'gray.200'}
+					py={4}
+					borderRadius={'2xl'}
+					shadow={'dark-lg'}
+					fontFamily={'Lora'}
+					fontWeight={'500'}
+					fontSize={'lg'}
+				>
+					<Container>
+						<Heading color={'black'} py={4} fontFamily={'Lora'} fontWeight={'400'}>
 							{title}
 						</Heading>
-						<VStack {...vstackProps}>{children}</VStack>
+						<VStack {...vstackProps} color={'black'}>
+							{children}
+						</VStack>
 					</Container>
 
-					<Container maxW={'70vw'}>
-						<VStack {...disclosureProps} {...vstackProps}>
+					<Container>
+						<VStack {...disclosureProps} {...vstackProps} color={'black'}>
 							{more}
 						</VStack>
 					</Container>

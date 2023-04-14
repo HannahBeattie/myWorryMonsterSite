@@ -44,7 +44,9 @@ export default function CustomIcon({ icon, href, page, btscl }) {
 						/>
 					}
 				/>
-				<Text fontSize={'xl'}>{page}</Text>
+				<Text fontSize={'xl'} fontWeight={'900'} color={'white'}>
+					{page}
+				</Text>
 			</VStack>
 		</StyledNextLink>
 	)

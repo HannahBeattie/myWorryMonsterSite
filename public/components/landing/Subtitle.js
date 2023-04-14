@@ -10,8 +10,8 @@ function Subtitle() {
 		<Stack
 			flex={1}
 			direction={{ base: 'column', sm: 'row', md: 'column' }}
-			alignItems={'stretch'}
-			justify={{ base: 'center', sm: 'center', md: 'start', lg: 'center' }}
+			alignItems={{ base: 'stretch', sm: 'center', lg: 'stretch' }}
+			justify={{ base: 'center', sm: 'center', lg: 'center' }}
 			spacing={-2}
 		>
 			<Text {...props}>The perfect pet</Text>

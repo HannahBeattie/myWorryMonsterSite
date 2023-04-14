@@ -25,8 +25,8 @@ function LndImg() {
 			<Grid
 				templateColumns={{ lg: 'repeat(5, 1fr)' }}
 				pr={{ lg: '12vw' }}
-				pl={{ md: '4vh', lg: '8vw' }}
-				pt={{ lg: 10 }}
+				pl={{ lg: '8vw' }}
+				pt={{ lg: '12vh' }}
 			>
 				<GridItem
 					colSpan={{ base: 1, lg: 3 }}
@@ -36,11 +36,13 @@ function LndImg() {
 				>
 					<VStack flex={1} alignItems={{ base: 'stretch', md: 'stretch' }}>
 						<Title />
+
 						<VStack alignItems={'stretch'}>
 							<Subtitle />
+
 							<VStack
 								alignItems={'stretch'}
-								display={{ base: 'none', md: 'flex' }}
+								display={{ base: 'none', lg: 'flex' }}
 								py={{ lg: 6 }}
 							>
 								<Buttons />
@@ -49,14 +51,17 @@ function LndImg() {
 					</VStack>
 				</GridItem>
 
-				<GridItem colSpan={{ lg: 2 }}>
-					<Image
-						alt={'The worry monster holdin two bags of worries'}
-						src='/assets/mnstr/wwb.png'
-					/>
+				<GridItem colSpan={{ lg: 2 }} mt={{ lg: '10vh', xl: '6vh' }}>
+					<VStack flex={1}>
+						<Image
+							maxH={{ base: 400, sm: 600, md: 500, lg: 1000 }}
+							alt={'The worry monster holdin two bags of worries'}
+							src='/assets/mnstr/wwb.png'
+						/>
+					</VStack>
 				</GridItem>
 			</Grid>
-			<VStack display={{ base: 'flex', md: 'none' }}>
+			<VStack display={{ base: 'flex', lg: 'none' }}>
 				<Buttons />
 			</VStack>
 		</Appear>
