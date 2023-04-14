@@ -1,4 +1,13 @@
-import { Button, Container, HStack, Heading, Spacer, VStack, useDisclosure } from '@chakra-ui/react'
+import {
+	Button,
+	Container,
+	HStack,
+	Heading,
+	Spacer,
+	Text,
+	VStack,
+	useDisclosure,
+} from '@chakra-ui/react'
 import { FaChevronCircleDown, FaChevronCircleUp } from 'react-icons/fa'
 
 function Disclosure({ title, children, props, intro, more }) {
@@ -17,32 +26,33 @@ function Disclosure({ title, children, props, intro, more }) {
 			<VStack fontSize={'3xl'} px={20}>
 				<Container bg={'blackAlpha.800'} py={4} borderRadius={'2xl'} shadow={'dark-lg'}>
 					<Container maxW={'70vw'}>
-						<Heading>{title}</Heading>
+						<Heading color={'purple.300'} py={4}>
+							{title}
+						</Heading>
 						<VStack {...vstackProps}>{children}</VStack>
 					</Container>
+
 					<Container maxW={'70vw'}>
 						<VStack {...disclosureProps} {...vstackProps}>
 							{more}
 						</VStack>
 					</Container>
-
-					<HStack px={2}>
+					<HStack>
 						<Spacer />
 						<Button
 							zIndex={4}
-							bg={'transparent'}
+							bg={'gray.900'}
+							w={10}
+							borderRadius={200}
+							h={10}
 							size={'4xl'}
-							_hover={{ bg: 'transparent' }}
+							_hover={{ bg: 'cyan.800' }}
 							onClick={() => {
 								console.log('disclosure is', disclosureProps)
 							}}
 							{...buttonProps}
 						>
-							{hidden ? (
-								<FaChevronCircleDown fontSize={'8xl'} />
-							) : (
-								<FaChevronCircleUp fontSize={'8xl'} />
-							)}
+							{hidden ? <Text>...</Text> : <Text>X</Text>}
 						</Button>
 					</HStack>
 				</Container>
