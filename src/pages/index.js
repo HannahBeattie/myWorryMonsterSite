@@ -1,6 +1,7 @@
 import {
 	Accordion,
 	Button,
+	Center,
 	Container,
 	HStack,
 	Heading,
@@ -40,7 +41,7 @@ export default function Home() {
 				as={'main'}
 				maxW={'100vw'}
 				overflow={'hidden'}
-				spacing={200}
+				spacing={{ lg: 200, base: 100 }}
 			>
 				<LndImg />
 				<Feature
@@ -81,35 +82,57 @@ export default function Home() {
 					{sec4}
 					{sec5}
 				</VStack>
-				<VStack alignItems={'stretch'} px={'10vw'}>
-					<HStack>
-						<Image maxH={300} src={'/assets/mnstr/9.png'} alt={'doodle'} />
-
-						<Spacer />
-					</HStack>
-					<HStack>
-						{sec6}
-
-						<Image maxH={400} src={'/assets/mnstr/tg.png'} alt={'doodle'} />
-					</HStack>
-					<HStack px={8} pb={'30vh'}>
-						<Button
-							bg={'transparent'}
-							right={0}
-							left={0}
-							borderRadius={200}
-							shadow={'inner'}
-							_hover={{ bg: 'transparent' }}
-							onClick={() => {
-								window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-							}}
+				<VStack alignItems={'stretch'}>
+					<VStack px={'10vw'} display={{ base: 'none', md: 'flex' }}>
+						<Image maxH={300} maxW={300} src={'/assets/mnstr/9.png'} alt={'doodle'} />
+					</VStack>
+					<Feature
+						right={true}
+						bg={'transparent'}
+						image={
+							<Center>
+								<Image maxH={400} src={'/assets/mnstr/tg.png'} alt={'doodle'} />
+							</Center>
+						}
+					>
+						<VStack>{sec6}</VStack>
+						<VStack
+							alignItems={'stretch'}
+							px={'10vw'}
+							display={{ base: 'flex', md: 'none' }}
 						>
-							<Text color={'pink.300'} textAlign={'center'} fontSize={'2xl'} pt={4}>
-								Back to top
-							</Text>
-						</Button>
-						<Spacer />
-					</HStack>
+							<Image
+								maxH={300}
+								maxW={300}
+								src={'/assets/mnstr/9.png'}
+								alt={'doodle'}
+							/>
+						</VStack>
+
+						<HStack px={8} pb={{ lg: '30vh' }}>
+							<Button
+								bg={'transparent'}
+								right={0}
+								left={0}
+								borderRadius={200}
+								shadow={'inner'}
+								_hover={{ bg: 'transparent' }}
+								onClick={() => {
+									window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+								}}
+							>
+								<Text
+									color={'pink.300'}
+									textAlign={'center'}
+									fontSize={'2xl'}
+									pt={4}
+								>
+									Back to top
+								</Text>
+							</Button>
+							<Spacer />
+						</HStack>
+					</Feature>
 				</VStack>
 			</VStack>
 		</>
