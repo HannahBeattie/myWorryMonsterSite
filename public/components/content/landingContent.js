@@ -11,16 +11,14 @@ export const one = {
 			<Heading fontSize={'4xl'} color={'purple.300'}>
 				What is a worry Monster?
 			</Heading>
-			<VStack>
-				<Text>
-					A worry monster would have you believe that they are terribly scaresome,
-					fearsome creatures.
-				</Text>
-				<Text>
-					In acutality, they are rather loveable, goofy critters who get their name from
-					their unusual diet...
-				</Text>
-			</VStack>
+			<Text>
+				A worry monster would have you believe that they are terribly scaresome, fearsome
+				creatures.
+			</Text>
+			<Text>
+				In acutality, they are rather loveable, goofy critters who get their name from their
+				unusual diet...
+			</Text>
 		</BlurbBox>
 	),
 }

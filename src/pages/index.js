@@ -69,8 +69,6 @@ export default function Home() {
 						<MonsterImage
 							im={12}
 							props={{
-								mt: 0,
-								flex: 1,
 								maxH: 600,
 								borderRadius: 20,
 							}}
