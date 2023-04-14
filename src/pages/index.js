@@ -44,6 +44,7 @@ export default function Home() {
 				spacing={{ lg: 200, base: 50 }}
 				py={6}
 				pb={8}
+				px={{ lg: '10vw', sm: 10 }}
 			>
 				<LndImg />
 				<Feature

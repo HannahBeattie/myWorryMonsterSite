@@ -22,7 +22,7 @@ import Appear from '../animation/Appear'
 function LndImg() {
 	return (
 		<Appear>
-			<VStack px={{ lg: '15vw' }} minH={'95vh'} justify={'center'}>
+			<VStack px={{ lg: 10 }} minH={'95vh'} justify={'center'}>
 				<Grid templateColumns={{ lg: 'repeat(5, 1fr)' }}>
 					<GridItem colSpan={{ base: 1, lg: 3 }}>
 						<Title />
