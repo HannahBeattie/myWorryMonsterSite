@@ -16,7 +16,9 @@ export default function CustomIcon({ icon, href, page, btscl }) {
 		} else if (icon === 'minus') {
 			return '/assets/navcons/minus.png'
 		} else if (icon === 'plus') {
-			return '/assets/navcons/plus.png'
+			return '/assets/navcons/add.png'
+		} else if (icon === 'back') {
+			return '/assets/navcons/bk.png'
 		} else {
 			return
 		}
@@ -44,7 +46,7 @@ export default function CustomIcon({ icon, href, page, btscl }) {
 						/>
 					}
 				/>
-				<Text fontSize={'xl'} fontWeight={'900'} color={'white'}>
+				<Text fontSize={{ lg: 'md', lg: 'lg' }} fontWeight={'900'} color={'white'}>
 					{page}
 				</Text>
 			</VStack>
