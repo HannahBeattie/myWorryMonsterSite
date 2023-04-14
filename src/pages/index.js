@@ -42,7 +42,7 @@ export default function Home() {
 				align={{ base: 'center', md: 'stretch' }}
 				justify={'center'}
 				spacing={{ lg: 200, base: 50 }}
-				py={6}
+				py={{ base: 6, lg: 12 }}
 				pb={8}
 				px={{ lg: '10vw', sm: 10 }}
 			>
@@ -78,7 +78,7 @@ export default function Home() {
 					{sec3}
 				</Feature>
 
-				<VStack>
+				<VStack spacing={{ base: 4, lg: 8 }}>
 					{sec4}
 					{sec5}
 				</VStack>

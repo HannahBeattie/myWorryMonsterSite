@@ -1,33 +1,61 @@
-import { Center, Heading, Image, SimpleGrid, Spacer, Text, VStack } from '@chakra-ui/react'
+import {
+	Center,
+	Grid,
+	GridItem,
+	Heading,
+	Image,
+	SimpleGrid,
+	Spacer,
+	Text,
+	VStack,
+} from '@chakra-ui/react'
 import React from 'react'
 import BlurbBox from './BlurbBox'
 
 function About({ content, img, isRight }) {
 	return (
-		<VStack
-			flex={1}
-			alignItems='center'
-			justifyContent='center'
-			height={'100vh'}
-			w={'100vw'}
-			px={{ base: 0, md: 14 }}
-			py={'20vh'}
-		>
+		<VStack flex={1} h={'100vh'} w={'100vw'}>
 			{isRight && (
-				<SimpleGrid flex={1} columns={{ lg: 2, md: 1 }}>
-					<VStack justify={'start'} flex={1}>
-						{content}
-					</VStack>
-					<VStack flex={1} justify={'center'}>
-						{img}
-					</VStack>
-				</SimpleGrid>
+				<Grid
+					alignItems='center'
+					justifyContent='center'
+					flex={1}
+					templateColumns={{ lg: 'repeat(3, 1fr)' }}
+				>
+					<GridItem colSpan={2}>
+						<VStack
+							px={{ base: 8, sm: 14, lg: '10vw' }}
+							alignItems={'stretch'}
+							mb={{ base: -100, md: 0 }}
+							flex={1}
+							mr={{ lg: -50 }}
+						>
+							{content}
+						</VStack>
+					</GridItem>
+					<GridItem
+						colSpan={{ base: 2, lg: 1 }}
+						align={'center'}
+						justifyContent={'center'}
+					>
+						<VStack flex={1} pr={{ lg: 100 }}>
+							{img}
+						</VStack>
+					</GridItem>
+				</Grid>
 			)}
 			{!isRight && (
-				<SimpleGrid columns={{ lg: 2, md: 1 }} px={{ base: 8 }} flex={1} minH={'90vh'}>
-					<Center>{img}</Center>
-					{content}
-				</SimpleGrid>
+				<Grid
+					alignItems='center'
+					justifyContent='center'
+					flex={1}
+					templateColumns={{ lg: 'repeat(3, 1fr)' }}
+				>
+					<GridItem colSpan={1}>{img}</GridItem>
+					<GridItem colSpan={1}>
+						<VStack flex={1}>{img}</VStack>
+					</GridItem>
+				</Grid>
 			)}
 		</VStack>
 	)
