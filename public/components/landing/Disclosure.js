@@ -49,6 +49,7 @@ function Disclosure({ title, children, props, intro, more }) {
 					<HStack>
 						<Spacer />
 						<Button
+							fontFamily={'Gaegu'}
 							zIndex={4}
 							bg={'gray.900'}
 							w={10}
