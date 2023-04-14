@@ -71,7 +71,9 @@ const SmoothScroll = () => {
 			{scrollRange > 0 && (
 				<VStack flex={1} maxH={'100vh'} py={100}>
 					<Image maxH={'60vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} />
-					<Text fontSize={'2xl'}>SPECIAL THANKS TO: MIKEY LEMMON</Text>
+					<Text color={'gray.500'} fontSize={{ lg: 'xl' }}>
+						SPECIAL THANKS TO: MIKEY LEMMON
+					</Text>
 				</VStack>
 			)}
 		</>
