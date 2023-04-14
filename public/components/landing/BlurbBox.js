@@ -10,8 +10,6 @@ function BlurbBox({ title, children }) {
 			alignContent={{ base: 'center', lg: 'center' }}
 			maxW={'100vw'}
 		>
-			<Heading>{title}</Heading>
-
 			<VStack
 				alignItems={'stretch'}
 				px={8}
