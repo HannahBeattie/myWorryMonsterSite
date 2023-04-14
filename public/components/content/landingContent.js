@@ -97,11 +97,12 @@ export const five = {
 		<Disclosure
 			props={{ fontSize: '2xl' }}
 			title={'CBT and the Wisdom of Worries'}
-			intro={'Worries can be useful sources of information, however...'}
+			intro={
+				'Based on cognitive behavioural techniques ideas My Worry Monster draws ideas from; Creating a neutral, non-judgemental space that can be useful for: '
+			}
 			more={
 				<>
-					<Text>This can be useful for :</Text>
-					<List>
+					<List pt={4}>
 						<IconListItem>Identifying patterns and triggers</IconListItem>
 						<IconListItem>
 							Externalising and defining the limits of a worry

@@ -26,7 +26,7 @@ function Disclosure({ title, children, props, intro, more }) {
 			<VStack fontSize={'3xl'} px={20}>
 				<Container bg={'blackAlpha.800'} py={4} borderRadius={'2xl'} shadow={'dark-lg'}>
 					<Container maxW={'70vw'}>
-						<Heading color={'purple.300'} py={4}>
+						<Heading color={'gray.300'} py={4}>
 							{title}
 						</Heading>
 						<VStack {...vstackProps}>{children}</VStack>
