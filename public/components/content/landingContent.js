@@ -1,6 +1,7 @@
 import { Heading, List, Text, VStack } from '@chakra-ui/react'
 import BlurbBox from '../landing/BlurbBox'
 import IconListItem from '../landing/IconListItem'
+import Disclosure from '../landing/Disclosure'
 
 export const one = {
 	item: (
@@ -39,34 +40,55 @@ export const three = {
 
 export const four = {
 	item: (
-		<BlurbBox title={'CBT'}>
+		<Disclosure
+			props={{ fontSize: '2xl' }}
+			title={'Why Worry?'}
+			intro={'Worries can be useful sources of information, however...'}
+			more={
+				<>
+					<Text>
+						Now, they are like a smoke alarm with a low battery; Screaming warnings
+						indistinguishable from the real thing.
+					</Text>
+					<Text>Or, they play the hits.</Text>
+					<Text>Just as you are drifting off to sleep-</Text>
+					<Text>
+						Remember that horrible you did? Remember when your friend hurt your
+						feelings? Remember when you were laughed at? Remember that time you felt
+						foolish?
+					</Text>
+					<Text>Some of us are especially good at worrying.</Text>
+					Our incredible skill can leave us breathless, shaking and quite literally
+					petrified.
+					<Text>How weak we feel! How lonely and retched and strange.</Text>
+					<Text>
+						Even though it would be absurd to presume that others do not also worry.
+					</Text>
+					<Text>
+						Or perhaps that makes us feel worse; The thought that our worries are small
+						and foolish and unworthy. The thought that such small things could freeze
+						us.{' '}
+					</Text>
+					<Text>
+						The extent to which our worries are useful or reflective of reality must
+						ultimately be our own puzzle to solve, but one thing is certain; We should
+						not feel ashamed, guilty or worried about our capacity to worry.
+					</Text>
+					<Text>
+						Instead, we should look at our fear though a lens of patience, acceptance
+						and curiosity. As though we were our very own dear friend.
+					</Text>
+				</>
+			}
+		>
 			<Text>
-				Worries can serve important functions in our life. They can also turn into great
-				looming, invisible threats.
+				Worries can be useful sources of information, however, all too often, we use our
+				imagination to furnish them with such looming, impregnable powers that we presume
+				them unconquerable.
 			</Text>
-			<Text>
-				Based on the ideas around cognitive-behavioural therapy, My Worry Monster allows
-				users to keep track of their worries in a neutral, non-judgemental and private
-				environment.
-			</Text>
-
-			<Text>This can be useful for :</Text>
-			<List>
-				<IconListItem>Identifying patterns and triggers</IconListItem>
-				<IconListItem>Externalising and defining the limits of a worry</IconListItem>
-
-				<IconListItem>Creating distance and perspective</IconListItem>
-
-				<IconListItem>Clarifying specific causes of a worry</IconListItem>
-				<IconListItem>Problem-solving</IconListItem>
-				<IconListItem>Tracking progress</IconListItem>
-			</List>
-
-			<Text>
-				Sometimes our brains be filled with all sorts of invisible monsters. What might
-				happen if we treated them with kindness and acceptance?
-			</Text>
-		</BlurbBox>
+			<Text>Perhaps, once upon a time, our worries were useful. They kept us safe.</Text>
+			<Text>Warned us of very real and present danger.</Text>
+		</Disclosure>
 	),
 }
 

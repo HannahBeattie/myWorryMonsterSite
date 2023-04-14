@@ -1,7 +1,7 @@
 import { Container, Heading, VStack } from '@chakra-ui/react'
 import React from 'react'
 
-function BlurbBox({ title, children }) {
+function BlurbBox({ title, children, props }) {
 	return (
 		<Container
 			flex={1}
@@ -18,6 +18,7 @@ function BlurbBox({ title, children }) {
 				alignSelf={{ base: 'center', lg: 'center' }}
 				alignContent={{ base: 'center', lg: 'center' }}
 				fontSize={{ base: 'xl', sm: '2xl', md: '3xl', lg: '4xl' }}
+				{...props}
 			>
 				{children}
 			</VStack>

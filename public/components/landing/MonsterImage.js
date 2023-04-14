@@ -27,6 +27,10 @@ function MonsterImage({ im, alt, props, shadow }) {
 			return '/blue/bg.png'
 		} else if (im === 12) {
 			return '/blue/12.png'
+		} else if (im === 13) {
+			return '/assets/mnstr/wb.png'
+		} else if (im === 13) {
+			return 'assets//mnstr/wwb.png'
 		} else {
 			return '/blue/1.jpg'
 		}

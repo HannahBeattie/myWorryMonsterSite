@@ -1,4 +1,4 @@
-import { VStack } from '@chakra-ui/react'
+import { Accordion, Container, Heading, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
 import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
@@ -10,6 +10,7 @@ export default function Home() {
 
 	const sec3 = getItem('three')
 	const sec4 = getItem('four')
+	const sec5 = getItem('five')
 	return (
 		<>
 			<Head>
@@ -61,6 +62,26 @@ export default function Home() {
 					}
 				>
 					{sec3}
+				</Feature>
+				<Accordion defaultIndex={[0]} allowMultiple allowToggle>
+					{sec4}
+				</Accordion>
+				<Feature
+					right={true}
+					bg={'transparent'}
+					image={
+						<MonsterImage
+							im={12}
+							props={{
+								mt: 0,
+								flex: 1,
+								maxH: 600,
+								borderRadius: 20,
+							}}
+						/>
+					}
+				>
+					{sec5}
 				</Feature>
 			</VStack>
 		</>
