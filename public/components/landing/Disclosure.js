@@ -41,7 +41,7 @@ function Disclosure({ title, children, props, intro, more }) {
 						</VStack>
 					</Container>
 
-					<Container>
+					<Container pb={4}>
 						<VStack {...disclosureProps} {...vstackProps} color={'black'}>
 							{more}
 						</VStack>
