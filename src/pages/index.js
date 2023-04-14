@@ -1,9 +1,21 @@
-import { Accordion, Container, HStack, Heading, Image, Spacer, VStack } from '@chakra-ui/react'
+import {
+	Accordion,
+	Button,
+	Container,
+	HStack,
+	Heading,
+	Image,
+	Spacer,
+	Text,
+	VStack,
+} from '@chakra-ui/react'
 import Head from 'next/head'
 import { getItem } from '../../public/components/content/landingContent'
 import Feature from '../../public/components/landing/Feature'
 import LndImg from '../../public/components/landing/LndImg'
 import MonsterImage from '../../public/components/landing/MonsterImage'
+import StyledNextLink from '../../public/components/nav/StyledNextLink'
+import { useEffect } from 'react'
 
 export default function Home() {
 	const sec1 = getItem('one')
@@ -12,6 +24,7 @@ export default function Home() {
 	const sec4 = getItem('four')
 	const sec5 = getItem('five')
 	const sec6 = getItem('six')
+
 	return (
 		<>
 			<Head>
@@ -72,15 +85,22 @@ export default function Home() {
 				<VStack px={100} py={8} alignItems={'stretch'}>
 					{sec6}
 				</VStack>
-				<MonsterImage
-					im={12}
-					props={{
-						mt: 0,
-						flex: 1,
-						maxH: 600,
-						borderRadius: 20,
-					}}
-				/>
+				<VStack py={10}>
+					<HStack>
+						<Image maxH={300} src={'/assets/mnstr/9.png'} alt={'doodle'} />
+					</HStack>
+					<Button
+						bg={'gray.900'}
+						_hover={{ bg: 'teal.900' }}
+						shadow={'dark-lg'}
+						borderRadius={200}
+						onClick={() => {
+							window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+						}}
+					>
+						<Text textAlign={'center'}>Scroll to top</Text>
+					</Button>
+				</VStack>
 			</VStack>
 		</>
 	)
