@@ -11,6 +11,7 @@ export default function Home() {
 	const sec3 = getItem('three')
 	const sec4 = getItem('four')
 	const sec5 = getItem('five')
+	const sec6 = getItem('six')
 	return (
 		<>
 			<Head>
@@ -63,12 +64,13 @@ export default function Home() {
 				>
 					{sec3}
 				</Feature>
-				<Accordion defaultIndex={[0]} allowMultiple allowToggle>
-					{sec4}
-				</Accordion>
+
+				{sec4}
+				{sec5}
+
 				<Feature
-					right={true}
 					bg={'transparent'}
+					right={true}
 					image={
 						<MonsterImage
 							im={12}
@@ -81,7 +83,7 @@ export default function Home() {
 						/>
 					}
 				>
-					{sec5}
+					{sec6}
 				</Feature>
 			</VStack>
 		</>

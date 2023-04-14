@@ -94,36 +94,49 @@ export const four = {
 
 export const five = {
 	item: (
-		<BlurbBox title={'CBT'}>
-			<Text>
-				Worries can serve important functions in our life. They can also turn into great
-				looming, invisible threats.
-			</Text>
+		<Disclosure
+			props={{ fontSize: '2xl' }}
+			title={'CBT and the Wisdom of Worries'}
+			intro={'Worries can be useful sources of information, however...'}
+			more={
+				<>
+					<Text>This can be useful for :</Text>
+					<List>
+						<IconListItem>Identifying patterns and triggers</IconListItem>
+						<IconListItem>
+							Externalising and defining the limits of a worry
+						</IconListItem>
+
+						<IconListItem>Creating distance and perspective</IconListItem>
+
+						<IconListItem>Clarifying specific causes of a worry</IconListItem>
+						<IconListItem>Problem-solving</IconListItem>
+						<IconListItem>Tracking progress</IconListItem>
+					</List>
+
+					<Text>
+						Sometimes our brains be filled with all sorts of invisible monsters. What
+						might happen if we treated them with kindness and acceptance?
+					</Text>
+				</>
+			}
+		>
 			<Text>
 				Based on the ideas around cognitive-behavioural therapy, My Worry Monster allows
 				users to keep track of their worries in a neutral, non-judgemental and private
 				environment.
 			</Text>
-
-			<Text>This can be useful for :</Text>
-			<List>
-				<IconListItem>Identifying patterns and triggers</IconListItem>
-				<IconListItem>Externalising and defining the limits of a worry</IconListItem>
-
-				<IconListItem>Creating distance and perspective</IconListItem>
-
-				<IconListItem>Clarifying specific causes of a worry</IconListItem>
-				<IconListItem>Problem-solving</IconListItem>
-				<IconListItem>Tracking progress</IconListItem>
-			</List>
-
-			<Text>
-				Sometimes our brains be filled with all sorts of invisible monsters. What might
-				happen if we treated them with kindness and acceptance?
-			</Text>
+		</Disclosure>
+	),
+}
+export const six = {
+	item: (
+		<BlurbBox>
+			<Heading>Who am I?</Heading>
 		</BlurbBox>
 	),
 }
+
 export function getItem(key) {
 	switch (key) {
 		case 'one':
@@ -136,6 +149,8 @@ export function getItem(key) {
 			return four.item
 		case 'five':
 			return five.item
+		case 'six':
+			return six.item
 
 		default:
 			return null // handle invalid key
