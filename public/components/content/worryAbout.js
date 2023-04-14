@@ -202,6 +202,7 @@ export const eight = {
 		/>
 	),
 }
+
 export function getSec(key) {
 	switch (key) {
 		case 'first':

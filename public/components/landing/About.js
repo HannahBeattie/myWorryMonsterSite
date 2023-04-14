@@ -4,7 +4,14 @@ import BlurbBox from './BlurbBox'
 
 function About({ content, img, isRight }) {
 	return (
-		<VStack flex={1} height={'100vh'} w={'100vw'} px={{ base: 4, md: 14 }}>
+		<VStack
+			flex={1}
+			alignItems='center'
+			justifyContent='center'
+			height={'100vh'}
+			w={'100vw'}
+			px={{ base: 4, md: 14 }}
+		>
 			{isRight && (
 				<SimpleGrid columns={{ lg: 2, md: 1 }} justify={{ lg: 'center' }}>
 					{content}
