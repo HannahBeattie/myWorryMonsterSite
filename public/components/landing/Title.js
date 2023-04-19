@@ -8,7 +8,7 @@ function Title() {
 			lineHeight={0.8}
 			textAlign={{ base: 'center', lg: 'start' }}
 		>
-			My Worry Monster
+			My pet Worry Monster
 		</Heading>
 	)
 }

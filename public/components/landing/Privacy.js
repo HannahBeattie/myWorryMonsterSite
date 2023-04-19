@@ -15,7 +15,9 @@ function Privacy() {
 				fontSize={'xl'}
 			>
 				<VStack spacing={4} alignItems={'stretch'}>
-					<Heading textTransform={'uppercase'}>MY WORRY MONSTER Privacy Policy</Heading>
+					<Heading textTransform={'uppercase'}>
+						MY PET WORRY MONSTER Privacy Policy
+					</Heading>
 					<Text>Hannah Beattie built My Worry Monster as a free app.</Text>
 					<Text>The service is intended to be used as such.</Text>
 					<Text>
