@@ -18,7 +18,7 @@ function Privacy() {
 					<Heading textTransform={'uppercase'}>
 						MY PET WORRY MONSTER Privacy Policy
 					</Heading>
-					<Text>Hannah Beattie built My Worry Monster as a free app.</Text>
+					<Text>Hannah Beattie built My Pet Worry Monster as a free app.</Text>
 					<Text>The service is intended to be used as such.</Text>
 					<Text>
 						This page is used to inform visitors regarding policies with the collection,
