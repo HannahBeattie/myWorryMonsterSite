@@ -14,7 +14,7 @@ import BlurbBox from './BlurbBox'
 
 function About({ content, img, isRight }) {
 	return (
-		<VStack flex={1} h={'100vh'} w={'100vw'}>
+		<VStack flex={1} h={'80vh'} w={'100vw'}>
 			{isRight && (
 				<Grid
 					alignItems='center'

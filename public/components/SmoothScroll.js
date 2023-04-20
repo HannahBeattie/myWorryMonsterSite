@@ -70,7 +70,7 @@ const SmoothScroll = () => {
 			</motion.section>
 			<VStack style={{ height: scrollRange }} className='ghost' />
 			{scrollRange > 0 && (
-				<VStack flex={1} maxH={'100vh'} py={100}>
+				<VStack flex={1} maxH={'100vh'} pb={20}>
 					<Image maxH={'60vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} mb={-10} />
 					<Text color={'gray.500'} fontSize={{ lg: 'xl' }}>
 						SPECIAL THANKS TO: MIKEY LEMMON
