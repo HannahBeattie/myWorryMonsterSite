@@ -22,10 +22,12 @@ function About({ content, img, isRight }) {
 					flex={1}
 					templateColumns={{ lg: 'repeat(3, 1fr)' }}
 				>
-					<GridItem colSpan={2}>
+					<GridItem colSpan={2} flex={1}>
 						<VStack
+							minH={160}
 							px={{ base: 8, sm: 14, lg: '10vw' }}
 							alignItems={'stretch'}
+							justifyItems={'start'}
 							flex={1}
 							mr={{ lg: -50 }}
 						>
