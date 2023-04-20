@@ -14,7 +14,7 @@ import BlurbBox from './BlurbBox'
 
 function About({ content, img, isRight }) {
 	return (
-		<VStack flex={1} h={'80vh'} w={'100vw'}>
+		<VStack flex={1} h={{ md: '80vh' }} w={'100vw'}>
 			{isRight && (
 				<Grid
 					alignItems='center'
@@ -26,7 +26,6 @@ function About({ content, img, isRight }) {
 						<VStack
 							px={{ base: 8, sm: 14, lg: '10vw' }}
 							alignItems={'stretch'}
-							mb={{ base: -100, md: 0 }}
 							flex={1}
 							mr={{ lg: -50 }}
 						>

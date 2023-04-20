@@ -46,6 +46,7 @@ const SmoothScroll = () => {
 					position: 'fixed',
 					left: 0,
 					right: 0,
+
 					willChange: 'transform',
 				}}
 			>
@@ -70,7 +71,7 @@ const SmoothScroll = () => {
 			</motion.section>
 			<VStack style={{ height: scrollRange }} className='ghost' />
 			{scrollRange > 0 && (
-				<VStack flex={1} maxH={'100vh'} pb={20}>
+				<VStack flex={1} maxH={'100vh'} pb={{ base: 100, md: 20 }}>
 					<Image
 						maxH={'60vh'}
 						src={'/assets/mnstr/tg.png'}

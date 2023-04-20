@@ -11,7 +11,6 @@ function About() {
 					</Heading>
 					<Text fontSize={{ md: 'xl', lg: '2xl' }}>By Hannah Beattie</Text>
 				</VStack>
-
 				<SmoothScroll />
 			</VStack>
 		</>
