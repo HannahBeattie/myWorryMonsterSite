@@ -9,7 +9,7 @@ function AboutCreator() {
 				<Image
 					maxH={500}
 					maxW={500}
-					src={'/assets/mnstr/TG.png'}
+					src={'/assets/mnstr/tg.png'}
 					alt={'doodle of a person holding hands with the worry monster and smiling'}
 				/>
 			</Center>
