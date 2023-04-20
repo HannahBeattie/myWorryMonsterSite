@@ -19,7 +19,7 @@ export const first = {
 			borderRadius={50}
 			{...imProps}
 			src={'/assets/mnstr/s2.png'}
-			alt={'scared kid'}
+			alt={'a scared child'}
 		/>
 	),
 }
@@ -30,7 +30,13 @@ export const firstPR = {
 		</BlurbBox>
 	),
 
-	img: <Image {...imProps} src={'/assets/mnstr/22.png'} alt={'scared kid'} />,
+	img: (
+		<Image
+			{...imProps}
+			src={'/assets/mnstr/22.png'}
+			alt={'a diagram of a bed with arrows pointing to the monster'}
+		/>
+	),
 }
 
 export const seccond = {
@@ -48,7 +54,7 @@ export const seccond = {
 			shadow={'dark-lg'}
 			borderRadius={50}
 			src={'/assets/mnstr/3.png'}
-			alt={'feet'}
+			alt={'a monster looking through a door'}
 			{...imProps}
 		/>
 	),
@@ -61,7 +67,7 @@ export const twoPointTwo = {
 		</BlurbBox>
 	),
 
-	img: <Image {...imProps} src={'/assets/mnstr/trk.png'} alt={'feet'} />,
+	img: <Image {...imProps} src={'/assets/mnstr/trk.png'} alt={'a diagram of an excape plan'} />,
 }
 
 export const twoPointThree = {
@@ -77,7 +83,7 @@ export const twoPointThree = {
 			shadow={'dark-lg'}
 			borderRadius={50}
 			src={'/assets/mnstr/s1.png'}
-			alt={'feet'}
+			alt={'a scared looking child'}
 		/>
 	),
 }
@@ -98,7 +104,7 @@ export const third = {
 			borderRadius={50}
 			shadow={'dark-lg'}
 			src={'/assets/mnstr/no.png'}
-			alt={'feet'}
+			alt={'a monster looking sat at being excluded'}
 		/>
 	),
 }
@@ -109,7 +115,15 @@ export const thirdPointThree = {
 		</BlurbBox>
 	),
 
-	img: <Image {...imProps} src={'/assets/mnstr/4.png'} alt={'feet'} />,
+	img: (
+		<Image
+			{...imProps}
+			borderRadius={50}
+			shadow={'dark-lg'}
+			src={'/assets/mnstr/see.png'}
+			alt={'monster peeping'}
+		/>
+	),
 }
 
 export const forth = {
@@ -123,7 +137,7 @@ export const forth = {
 		</BlurbBox>
 	),
 
-	img: <Image {...imProps} src={'/assets/mnstr/foots.png'} alt={'feet'} />,
+	img: <Image {...imProps} src={'/assets/mnstr/foots.png'} alt={'feet doodle'} />,
 }
 export const fifth = {
 	content: (
@@ -146,7 +160,7 @@ export const fifth = {
 			borderRadius={50}
 			{...imProps}
 			src={'/assets/mnstr/us.png'}
-			alt={'feet'}
+			alt={'portrait of me as a child with the monster, sitting happily'}
 		/>
 	),
 }
@@ -169,7 +183,7 @@ export const sixth = {
 		</BlurbBox>
 	),
 
-	img: <Image {...imProps} src={'/assets/mnstr/88.png'} alt={'feet'} />,
+	img: <Image {...imProps} src={'/assets/mnstr/think.png'} alt={'brain doodle'} />,
 }
 
 export const seventh = {
@@ -180,7 +194,7 @@ export const seventh = {
 			<Text>Even when it feels as though you may be swallowed up, GULP!</Text>
 		</BlurbBox>
 	),
-	img: <Image {...imProps} src={'/assets/mnstr/9.png'} alt={'feet'} />,
+	img: <Image {...imProps} src={'/assets/mnstr/9.png'} alt={'flower doodle'} />,
 }
 
 export const eight = {
@@ -198,7 +212,7 @@ export const eight = {
 			borderRadius={50}
 			{...imProps}
 			src={'/assets/mnstr/aspie.png'}
-			alt={'feet'}
+			alt={'self portrait with monster peeping from the bottom corner.'}
 		/>
 	),
 }

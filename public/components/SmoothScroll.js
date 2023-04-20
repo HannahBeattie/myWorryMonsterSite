@@ -71,7 +71,14 @@ const SmoothScroll = () => {
 			<VStack style={{ height: scrollRange }} className='ghost' />
 			{scrollRange > 0 && (
 				<VStack flex={1} maxH={'100vh'} pb={20}>
-					<Image maxH={'60vh'} src={'/assets/mnstr/tg.png'} alt={'feet'} mb={-10} />
+					<Image
+						maxH={'60vh'}
+						src={'/assets/mnstr/tg.png'}
+						alt={
+							'a naive style drawing of a monster and I holding hands with a rainbow'
+						}
+						mb={-10}
+					/>
 					<Text color={'gray.500'} fontSize={{ lg: 'xl' }}>
 						SPECIAL THANKS TO: MIKEY LEMMON
 					</Text>
@@ -80,7 +87,7 @@ const SmoothScroll = () => {
 							<Image
 								maxH={{ base: 6 }}
 								src={'/assets/navcons/home.png'}
-								alt={'feet'}
+								alt={'home'}
 							/>
 							<VStack>
 								<Spacer />
