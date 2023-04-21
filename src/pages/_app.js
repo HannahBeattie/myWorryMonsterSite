@@ -14,7 +14,6 @@ export default function App({ Component, pageProps }) {
 				<meta name='description' content='Portfolio website' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<BgImage bg={4} />
 			<AnimatePresence mode='wait' initial={false}>
 				<VStack
 					padding={0}
@@ -24,6 +23,8 @@ export default function App({ Component, pageProps }) {
 					alignItems='stretch'
 					minH='100vh'
 					width={'100vw'}
+					backgroundSize={'cover'}
+					backgroundImage={'/assets/bg/bg1.jpg'}
 				>
 					<Logo />
 					<Component {...pageProps} />

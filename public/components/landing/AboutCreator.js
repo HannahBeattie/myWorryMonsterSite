@@ -4,16 +4,7 @@ import { getItem } from '../content/landingContent'
 const sec6 = getItem('six')
 function AboutCreator() {
 	return (
-		<SimpleGrid p={{ lg: 8 }}>
-			<Center>
-				<Image
-					maxH={500}
-					maxW={500}
-					src={'/assets/mnstr/tg.png'}
-					alt={'doodle of a person holding hands with the worry monster and smiling'}
-				/>
-			</Center>
-
+		<SimpleGrid p={{ lg: 8 }} maxW={'100vw'}>
 			<Container py={{ lg: 4 }}>{sec6}</Container>
 			<Center>
 				<Image

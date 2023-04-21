@@ -32,7 +32,7 @@ export default function HorizontalHide() {
 				bg={'transparent'}
 				position={'fixed'}
 				top={{ base: 2, md: 4 }}
-				right={0}
+				right={4}
 				borderRadius={200}
 				_hover={{ bg: 'transparent' }}
 			>

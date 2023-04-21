@@ -19,6 +19,7 @@ import StyledNextLink from '../../public/components/nav/StyledNextLink'
 import { useEffect } from 'react'
 import ScrollToTop from '../../public/components/nav/ScrollToTop'
 import AboutCreator from '../../public/components/landing/AboutCreator'
+import Gallery from '../../public/components/Gallery'
 
 export default function Home() {
 	const sec1 = getItem('one')
@@ -42,7 +43,6 @@ export default function Home() {
 				align={{ base: 'center', md: 'stretch' }}
 				justify={'center'}
 				spacing={{ lg: 200, base: 50 }}
-				py={{ base: 6, lg: 12 }}
 				pb={8}
 				px={{ lg: '10vw', sm: 10 }}
 			>
@@ -53,7 +53,7 @@ export default function Home() {
 						<MonsterImage
 							im={7}
 							props={{
-								maxH: 600,
+								maxH: { base: 420, md: 600 },
 								borderRadius: 20,
 							}}
 						/>
@@ -69,7 +69,7 @@ export default function Home() {
 						<MonsterImage
 							im={12}
 							props={{
-								maxH: 600,
+								maxH: { base: 400, md: 600 },
 								borderRadius: 20,
 							}}
 						/>
@@ -82,8 +82,19 @@ export default function Home() {
 					{sec4}
 					{sec5}
 				</VStack>
-				<AboutCreator />
-				<ScrollToTop />
+				<Center backgroundColor={'blackAlpha.700'} borderRadius={20}>
+					<VStack py={6}>
+						<Heading pb={4} color={'gray.600'}>
+							Stils
+						</Heading>
+						<Gallery />
+					</VStack>
+				</Center>
+
+				<VStack zIndex={1}>
+					<AboutCreator />
+					<ScrollToTop />
+				</VStack>
 			</VStack>
 		</>
 	)

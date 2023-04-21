@@ -7,8 +7,8 @@ import NextLink from 'next/link'
 
 export const one = {
 	item: (
-		<BlurbBox title={'What is a worry Monster?'}>
-			<Heading fontSize={'4xl'} color={'purple.300'}>
+		<BlurbBox>
+			<Heading color={'gray.400'} fontSize={{ base: 'xl', md: '5xl' }}>
 				What is a worry Monster?
 			</Heading>
 			<Text>

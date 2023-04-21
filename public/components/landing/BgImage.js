@@ -15,15 +15,73 @@ function BgImage({ bg, alt }) {
 	}
 
 	return (
-		<Image
-			flex={1}
-			minH={'100vh'}
-			minW={'100vw'}
-			position={'fixed'}
-			zIndex={-1}
-			src={checkBg()}
-			alt={alt ? alt : 'A hand-drawn background'}
-		/>
+		<VStack spacing={0}>
+			<Image
+				position={'absolute'}
+				left={0}
+				right={0}
+				zIndex={-1}
+				minW={'full'}
+				minH={'100vh'}
+				src={'/assets/bg/4.png'}
+				alt={alt ? alt : 'A hand-drawn background'}
+			/>
+			<Image
+				position={'absolute'}
+				left={0}
+				right={0}
+				top={'100vh'}
+				zIndex={-1}
+				minW={'full'}
+				minH={'100vh'}
+				src={'/assets/bg/4.png'}
+				alt={alt ? alt : 'A hand-drawn background'}
+			/>
+			<Image
+				position={'absolute'}
+				left={0}
+				right={0}
+				top={'200vh'}
+				zIndex={-1}
+				minW={'full'}
+				minH={'100vh'}
+				src={'/assets/bg/4.png'}
+				alt={alt ? alt : 'A hand-drawn background'}
+			/>
+			<Image
+				position={'absolute'}
+				left={0}
+				right={0}
+				top={'300vh'}
+				zIndex={-1}
+				minW={'full'}
+				minH={'300vh'}
+				src={'/assets/bg/4.png'}
+				alt={alt ? alt : 'A hand-drawn background'}
+			/>
+			<Image
+				position={'absolute'}
+				left={0}
+				right={0}
+				top={'400vh'}
+				zIndex={-1}
+				minW={'full'}
+				minH={'100vh'}
+				src={'/assets/bg/4.png'}
+				alt={alt ? alt : 'A hand-drawn background'}
+			/>
+			<Image
+				position={'absolute'}
+				left={0}
+				right={0}
+				top={'500vh'}
+				zIndex={-1}
+				minW={'full'}
+				minH={'100vh'}
+				src={'/assets/bg/5.png'}
+				alt={alt ? alt : 'A hand-drawn background'}
+			/>
+		</VStack>
 	)
 }
 

@@ -2,7 +2,7 @@ import { GridItem, Grid, VStack, Box, Center, Spacer, Container } from '@chakra-
 import React from 'react'
 import Appear from '../animation/Appear'
 
-export default function Feature({ image, children, right, bg }) {
+export default function Feature({ image, children, right }) {
 	return (
 		<>
 			<Appear>
