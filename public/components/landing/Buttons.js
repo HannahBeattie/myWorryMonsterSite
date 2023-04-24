@@ -1,4 +1,5 @@
-import { Box, Button, HStack, IconButton, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, HStack, IconButton, Link, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import React from 'react'
 import { FaAndroid, FaApple } from 'react-icons/fa'
 
@@ -23,17 +24,22 @@ function Buttons() {
 	return (
 		<VStack alignItems={'stretch'} spacing={{ base: 2, md: 4, lg: 6 }}>
 			<Text fontSize={'3xl'} textAlign={{ base: 'center', md: 'start' }}>
-				coming soon on
+				Available on
 			</Text>
+
 			<HStack alignItems={'stretch'} justify={{ base: 'center', md: 'start' }} spacing={4}>
 				<VStack>
-					<IconButton {...btnProps} icon={<FaApple fontSize={35} />} />
+					<NextLink
+						passHref
+						target='blank'
+						href={'https://apps.apple.com/nz/app/my-pet-worry-monster/id6447295037'}
+					>
+						<Link>
+							<IconButton {...btnProps} icon={<FaApple fontSize={35} />} />
+						</Link>
+					</NextLink>
 					<Text {...btnFnt}>IOS</Text>
 				</VStack>
-				{/* <VStack _hover={{ color: '#9EDEC6' }}>
-					<IconButton {...btnProps} icon={<FaAndroid fontSize={35} />} />
-					<Text {...btnFnt}>Android</Text>
-				</VStack> */}
 			</HStack>
 			<VStack spacing={0} alignItems={'stretch'}>
 				<Text {...fontSize}>Created & coded by Hannah Beattie</Text>
