@@ -81,14 +81,17 @@ export default function Home() {
 					{sec4}
 					{sec5}
 				</VStack>
-				<Center backgroundColor={'blackAlpha.700'} borderRadius={20}>
-					<VStack py={6}>
-						<Heading pb={4} color={'gray.600'}>
-							Stils
-						</Heading>
+				<VStack
+					flex={1}
+					alignItems={'stretch'}
+					shadow={'dark-lg'}
+					backgroundColor={'gray.800'}
+					borderRadius={20}
+				>
+					<VStack>
 						<Gallery />
 					</VStack>
-				</Center>
+				</VStack>
 
 				<VStack zIndex={1}>
 					<AboutCreator />

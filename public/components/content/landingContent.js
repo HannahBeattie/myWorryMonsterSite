@@ -86,8 +86,8 @@ export const four = {
 				imagination to furnish them with such looming, impregnable powers that we presume
 				them unconquerable.
 			</Text>
-			<Text>Perhaps, once upon a time, our worries were useful. They kept us safe.</Text>
-			<Text>Warned us of very real and present danger.</Text>
+			<Text>Perhaps, once upon a time, our worries were useful.</Text>
+			<Text>They kept us safe and warned us of very real danger.</Text>
 		</Disclosure>
 	),
 }

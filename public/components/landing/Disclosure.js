@@ -24,7 +24,7 @@ function Disclosure({ title, children, props, intro, more }) {
 			<VStack px={{ base: 4, lg: 20 }}>
 				<Container
 					py={{ base: 2, md: 4 }}
-					bg={'gray.300'}
+					backgroundColor={'gray.300'}
 					borderRadius={'2xl'}
 					shadow={'dark-lg'}
 					color={'white'}

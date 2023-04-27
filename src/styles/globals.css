@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Mulish:wght@200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&display=swap');
+
 .shadow {
 	box-shadow: 0 0 50px 1px #c0bcff81, /* inner white */ 0 0 20px 1px rgba(56, 118, 120, 0.555),
 		/* middle magenta */ 0 0 1px 1px rgb(238, 239, 246); /* outer cyan */
