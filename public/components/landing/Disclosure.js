@@ -23,25 +23,36 @@ function Disclosure({ title, children, props, intro, more }) {
 		<>
 			<VStack px={{ base: 4, lg: 20 }}>
 				<Container
-					bg={'gray.200'}
-					py={4}
+					py={{ base: 2, md: 4 }}
+					bg={'gray.300'}
 					borderRadius={'2xl'}
 					shadow={'dark-lg'}
-					fontFamily={'Lora'}
+					color={'white'}
+					fontFamily={'ariel'}
 					fontWeight={'500'}
-					fontSize={'lg'}
+					fontSize={{ base: 'lg', sm: 'lg' }}
 				>
 					<Container>
-						<Heading color={'black'} py={4} fontFamily={'Lora'} fontWeight={'400'}>
+						<Heading
+							py={{ base: 2, sm: 4 }}
+							color={'gray.900'}
+							fontFamily={'Lora'}
+							fontWeight={'200'}
+							fontSize={{ base: 'xl', sm: '3xl' }}
+						>
 							{title}
 						</Heading>
-						<VStack {...vstackProps} color={'black'}>
+						<VStack {...vstackProps} color={'gray.900'} fontSize={{ sm: 'xl' }}>
 							{children}
 						</VStack>
 					</Container>
-
-					<Container pb={4}>
-						<VStack {...disclosureProps} {...vstackProps} color={'black'}>
+					<Container mt={{ base: 4 }}>
+						<VStack
+							{...disclosureProps}
+							{...vstackProps}
+							color={'gray.900'}
+							fontSize={{ sm: 'xl' }}
+						>
 							{more}
 						</VStack>
 					</Container>
@@ -55,7 +66,7 @@ function Disclosure({ title, children, props, intro, more }) {
 							borderRadius={200}
 							h={{ base: 6, lg: 10 }}
 							size={'4xl'}
-							_hover={{ bg: 'cyan.800' }}
+							_hover={{ bg: 'gray.700' }}
 							onClick={() => {
 								console.log('disclosure is', disclosureProps)
 							}}

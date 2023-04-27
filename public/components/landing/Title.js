@@ -4,9 +4,10 @@ import React from 'react'
 function Title() {
 	return (
 		<Heading
-			fontSize={{ base: '4xl', sm: '5xl', md: '7xl', lg: '8xl', xl: '9xl' }}
+			fontSize={{ base: '4xl', sm: '6xl', md: '8xl' }}
 			lineHeight={0.8}
-			px={{ base: 6 }}
+			px={{ base: 6, lg: 0 }}
+			pr={{ lg: 4, xl: 0 }}
 			textAlign={{ base: 'center', lg: 'start' }}
 		>
 			My pet Worry Monster
