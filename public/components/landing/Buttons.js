@@ -31,11 +31,12 @@ function Buttons() {
 				<VStack>
 					<NextLink
 						passHref
+						legacyBehavior
 						target='blank'
 						href={'https://apps.apple.com/nz/app/my-pet-worry-monster/id6447295037'}
 					>
 						<Link>
-							<IconButton {...btnProps} icon={<FaApple fontSize={35} />} />
+							<FaApple fontSize={35} />
 						</Link>
 					</NextLink>
 					<Text {...btnFnt}>IOS</Text>

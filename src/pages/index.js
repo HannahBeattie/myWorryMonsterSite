@@ -26,7 +26,6 @@ export default function Home() {
 	const sec3 = getItem('three')
 	const sec4 = getItem('four')
 	const sec5 = getItem('five')
-	const sec6 = getItem('six')
 
 	return (
 		<>

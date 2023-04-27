@@ -17,7 +17,6 @@ function Disclosure({ title, children, props, intro, more }) {
 	const vstackProps = {
 		alignItems: 'stretch',
 	}
-	console.log('disclosure is', disclosureProps)
 	const { hidden } = disclosureProps
 
 	return (
