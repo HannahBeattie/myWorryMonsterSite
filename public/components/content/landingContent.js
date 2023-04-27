@@ -138,14 +138,14 @@ export const six = {
 				Hannah Beattie is a freelance artist, coder and storyteller from Aotearoa, New
 				Zealand.
 			</Text>
+			<Text>Hannah credits their insatiable curiosity to autism and ADHD.</Text>
 			<Text>
-				She credits her insatiable curiosity to her autism and ADHD and is interested in
-				destigmatizing difference and bringing neutral language into mental health and
-				disability conversations.
+				They are interested in making tech and STEM more accessable to visual learners,
+				neurodivergent women and anyone who feels as though they do not fit in.
 			</Text>
 
 			<Text>
-				You can Check out her website{' '}
+				You can Check out their website{' '}
 				<NextLink
 					target='blank'
 					href={'https://brain-storm-delta.vercel.app/'}
