@@ -1,4 +1,14 @@
-import { Box, Button, HStack, IconButton, Link, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import {
+	Box,
+	Button,
+	HStack,
+	Icon,
+	IconButton,
+	Link,
+	SimpleGrid,
+	Text,
+	VStack,
+} from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
 import { FaAndroid, FaApple } from 'react-icons/fa'
@@ -22,8 +32,8 @@ const btnFnt = {
 }
 function Buttons() {
 	return (
-		<VStack alignItems={'stretch'} spacing={{ base: 2, md: 4, lg: 6 }}>
-			<Text fontSize={'3xl'} textAlign={{ base: 'center', md: 'start' }}>
+		<VStack alignItems={'stretch'} spacing={{ base: 1, md: 4, lg: 6 }}>
+			<Text fontSize={{ lg: '3xl' }} textAlign={{ base: 'center', md: 'start' }}>
 				Available on
 			</Text>
 
@@ -36,7 +46,7 @@ function Buttons() {
 						href={'https://apps.apple.com/nz/app/my-pet-worry-monster/id6447295037'}
 					>
 						<Link>
-							<FaApple fontSize={35} />
+							<Icon fontSize={{ lg: 35, base: 30 }} as={FaApple} />
 						</Link>
 					</NextLink>
 					<Text {...btnFnt}>IOS</Text>
@@ -45,7 +55,7 @@ function Buttons() {
 			<VStack spacing={0} alignItems={'stretch'}>
 				<Text {...fontSize}>Created & coded by Hannah Beattie</Text>
 				<Text {...fontSize}>Artwork by Hannah Beattie</Text>
-				<Text {...fontSize}>Animation & tweaks by Mikey Lemmon</Text>
+				<Text {...fontSize}>Animation by Mikey Lemmon</Text>
 			</VStack>
 		</VStack>
 	)

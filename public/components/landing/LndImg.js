@@ -23,7 +23,7 @@ function LndImg() {
 	return (
 		<Appear>
 			<VStack
-				pt={{ base: 4, md: 8, lg: 0 }}
+				pt={{ base: 6, md: 8, lg: 0 }}
 				px={{ lg: 10 }}
 				minH={'100vh'}
 				justify={'center'}

@@ -14,7 +14,7 @@ function ScrollToTop() {
 						window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
 					}}
 				>
-					<Text color={'gray.500'} textAlign={'center'} fontSize={'2xl'} pt={4}>
+					<Text color={'gray.500'} textAlign={'center'} fontSize={{ md: '2xl' }} pt={4}>
 						Back to top
 					</Text>
 				</Button>

@@ -132,7 +132,7 @@ export const five = {
 }
 export const six = {
 	item: (
-		<VStack fontSize={{ base: '2xl', lg: '2xl' }} alignItems={'stretch'}>
+		<VStack fontSize={{ base: 'lg', sm: '2xl', md: '3xl', lg: '4xl' }} alignItems={'stretch'}>
 			<Heading>About the creator</Heading>
 			<Text>
 				Hannah Beattie is a freelance artist, coder and storyteller from Aotearoa, New

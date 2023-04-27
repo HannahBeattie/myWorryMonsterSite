@@ -1,18 +1,7 @@
-import {
-	Button,
-	Heading,
-	Icon,
-	IconButton,
-	Image,
-	Text,
-	VStack,
-	useDisclosure,
-} from '@chakra-ui/react'
+import { Button, Image, Text, VStack, useDisclosure } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { items } from './Header'
-import CustomIcon from './CustomIcon'
-import { useRouter } from 'next/router'
 import StyledNextLink from './StyledNextLink'
 
 export default function HorizontalHide() {
@@ -32,7 +21,7 @@ export default function HorizontalHide() {
 				bg={'transparent'}
 				position={'fixed'}
 				top={{ base: 2, md: 4 }}
-				right={4}
+				right={6}
 				borderRadius={200}
 				_hover={{ bg: 'transparent' }}
 			>
