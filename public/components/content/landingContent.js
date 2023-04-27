@@ -8,7 +8,7 @@ import NextLink from 'next/link'
 export const one = {
 	item: (
 		<BlurbBox>
-			<Heading color={'gray.400'} fontSize={{ base: 'xl', md: '5xl' }}>
+			<Heading color={'gray.400'} fontSize={{ base: 'xl', sm: '4xl', md: '5xl' }}>
 				What is a worry Monster?
 			</Heading>
 			<Text>
@@ -95,7 +95,7 @@ export const four = {
 export const five = {
 	item: (
 		<Disclosure
-			props={{ fontSize: '2xl' }}
+			props={{ fontSize: 'xl' }}
 			title={'CBT and the Wisdom of Worries'}
 			intro={
 				'Based on cognitive behavioural techniques ideas My Worry Monster draws ideas from; Creating a neutral, non-judgemental space that can be useful for: '
@@ -132,7 +132,7 @@ export const five = {
 }
 export const six = {
 	item: (
-		<VStack fontSize={{ base: 'lg', sm: '2xl', md: '3xl', lg: '4xl' }} alignItems={'stretch'}>
+		<VStack fontSize={{ base: 'lg', sm: '2xl' }} alignItems={'stretch'}>
 			<Heading>About the creator</Heading>
 			<Text>
 				Hannah Beattie is a freelance artist, coder and storyteller from Aotearoa, New

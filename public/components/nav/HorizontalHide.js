@@ -21,7 +21,7 @@ export default function HorizontalHide() {
 				bg={'transparent'}
 				position={'fixed'}
 				top={{ base: 2, md: 4 }}
-				right={{ base: 6, sm: 2 }}
+				right={{ base: 0, sm: 2 }}
 				borderRadius={200}
 				_hover={{ bg: 'transparent' }}
 			>

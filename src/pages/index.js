@@ -37,6 +37,7 @@ export default function Home() {
 			</Head>
 
 			<VStack
+				overflow={'hidden'}
 				flex={1}
 				as={'main'}
 				align={{ base: 'center', md: 'stretch' }}
@@ -93,10 +94,11 @@ export default function Home() {
 					</VStack>
 				</VStack>
 
-				<VStack zIndex={1}>
+				<VStack flex={1} alignItems={'stretch'}>
 					<AboutCreator />
-					<ScrollToTop />
 				</VStack>
+
+				<ScrollToTop />
 			</VStack>
 		</>
 	)
